@@ -1,10 +1,9 @@
-import { Building2, DollarSign, MapPin, Clock, Plus, Edit } from 'lucide-react';
+import { MapPin, Plus, Edit } from 'lucide-react';
 import { Card } from './ui/card';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Label } from './ui/label';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
-import { Badge } from './ui/badge';
 
 interface OwnerDashboardProps {
   onClose: () => void;

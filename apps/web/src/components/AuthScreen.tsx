@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
 import { X, Eye, EyeOff } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
@@ -29,13 +29,13 @@ export function AuthScreen({ onClose, defaultTab = 'login' }: AuthScreenProps) {
     type: 'finder' as 'finder' | 'owner',
   });
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = (e: FormEvent) => {
     e.preventDefault();
     login(loginData.email, loginData.password);
     onClose();
   };
 
-  const handleSignup = (e: React.FormEvent) => {
+  const handleSignup = (e: FormEvent) => {
     e.preventDefault();
     if (signupData.password !== signupData.confirmPassword) {
       alert('Passwords do not match');
