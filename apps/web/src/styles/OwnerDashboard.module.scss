@@ -1,0 +1,509 @@
+@import './variables';
+@import './mixins';
+
+.dashboard {
+  position: fixed;
+  inset: 0;
+  z-index: $z-index-modal;
+  background: $white;
+
+  .dark & {
+    background: $dark-bg;
+  }
+
+  .header {
+    @include gradient-blue;
+    color: $white;
+    padding: $spacing-4;
+    box-shadow: $shadow-md;
+
+    .headerTop {
+      @include flex-between;
+      margin-bottom: $spacing-3;
+
+      .backButton {
+        @include button-base;
+        background: transparent;
+        color: $white;
+        padding: $spacing-2;
+
+        &:hover {
+          background: rgba($white, 0.2);
+        }
+
+        svg {
+          width: 1.25rem;
+          height: 1.25rem;
+        }
+      }
+
+      .titleSection {
+        display: flex;
+        align-items: center;
+        gap: $spacing-2;
+        flex: 1;
+
+        svg {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+
+        h1 {
+          font-size: 1.25rem;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .subtitle {
+      color: rgba($white, 0.8);
+      font-size: 0.875rem;
+    }
+  }
+
+  .content {
+    height: calc(100vh - 120px);
+    overflow-y: auto;
+    padding: $spacing-4;
+    @include custom-scrollbar;
+  }
+
+  .lotCard {
+    @include card;
+    padding: $spacing-4;
+    margin-bottom: $spacing-4;
+
+    .cardHeader {
+      @include flex-between;
+      align-items: flex-start;
+      margin-bottom: $spacing-4;
+
+      .lotInfo {
+        flex: 1;
+
+        h3 {
+          font-weight: 500;
+          color: $gray-900;
+          margin-bottom: $spacing-1;
+
+          .dark & {
+            color: $dark-text;
+          }
+        }
+
+        p {
+          font-size: 0.875rem;
+          color: $gray-600;
+
+          .dark & {
+            color: $gray-400;
+          }
+        }
+      }
+
+      .editButton {
+        @include button-base;
+        border: 1px solid $gray-300;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        gap: $spacing-1;
+        font-size: 0.875rem;
+
+        .dark & {
+          border-color: $dark-border;
+          color: $dark-text;
+        }
+
+        &:hover {
+          background: $gray-50;
+
+          .dark & {
+            background: $dark-bg-secondary;
+          }
+        }
+      }
+    }
+
+    .statsGrid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: $spacing-2;
+      margin-bottom: $spacing-4;
+
+      .statBox {
+        text-align: center;
+        padding: $spacing-3;
+        border-radius: $radius-lg;
+
+        &.entrance {
+          background: lighten($secondary-orange, 35%);
+
+          .dark & {
+            background: $dark-bg;
+          }
+
+          .value {
+            color: $secondary-orange;
+
+            .dark & {
+              color: lighten($secondary-orange, 10%);
+            }
+          }
+        }
+
+        &.hourly {
+          background: lighten($primary-blue, 35%);
+
+          .dark & {
+            background: $dark-bg;
+          }
+
+          .value {
+            color: $primary-blue;
+
+            .dark & {
+              color: $primary-blue-light;
+            }
+          }
+        }
+
+        &.occupied {
+          background: lighten($secondary-green, 45%);
+
+          .dark & {
+            background: $dark-bg;
+          }
+        }
+
+        &.percentage {
+          background: lighten(#a855f7, 30%);
+
+          .dark & {
+            background: $dark-bg;
+          }
+
+          .value {
+            color: $secondary-green;
+
+            .dark & {
+              color: lighten($secondary-green, 10%);
+            }
+          }
+        }
+
+        .value {
+          font-size: 1.125rem;
+          font-weight: 600;
+          color: $gray-900;
+
+          .dark & {
+            color: $dark-text;
+          }
+        }
+
+        .label {
+          font-size: 0.75rem;
+          color: $gray-600;
+          margin-top: $spacing-1;
+
+          .dark & {
+            color: $gray-400;
+          }
+        }
+      }
+    }
+
+    .analytics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: $spacing-3;
+      font-size: 0.875rem;
+      margin-bottom: $spacing-4;
+
+      .analyticsItem {
+        display: flex;
+        align-items: center;
+        gap: $spacing-1;
+        color: $gray-600;
+
+        .dark & {
+          color: $gray-400;
+        }
+
+        svg {
+          width: 1rem;
+          height: 1rem;
+        }
+      }
+    }
+
+    .updateSection {
+      padding-top: $spacing-2;
+      border-top: 1px solid $gray-200;
+
+      .dark & {
+        border-color: $dark-border;
+      }
+
+      .sectionTitle {
+        font-weight: 500;
+        color: $gray-900;
+        margin-bottom: $spacing-3;
+
+        .dark & {
+          color: $dark-text;
+        }
+      }
+
+      .priceGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $spacing-2;
+        margin-bottom: $spacing-3;
+
+        .priceInput {
+          .inputLabel {
+            font-size: 0.75rem;
+            color: $gray-600;
+            margin-bottom: $spacing-1;
+            display: block;
+
+            .dark & {
+              color: $gray-400;
+            }
+          }
+
+          input {
+            @include input-base;
+          }
+        }
+      }
+
+      .updateButton {
+        @include button-base;
+        width: 100%;
+        background: $primary-blue;
+        color: $white;
+
+        &:hover {
+          background: $primary-blue-dark;
+        }
+      }
+    }
+  }
+
+  .addForm {
+    @include card;
+    padding: $spacing-6;
+
+    h3 {
+      font-weight: 500;
+      color: $gray-900;
+      margin-bottom: $spacing-4;
+
+      .dark & {
+        color: $dark-text;
+      }
+    }
+
+    .formGroup {
+      margin-bottom: $spacing-4;
+
+      label {
+        display: block;
+        font-weight: 500;
+        color: $gray-900;
+        margin-bottom: $spacing-2;
+
+        .dark & {
+          color: $dark-text;
+        }
+      }
+
+      input {
+        @include input-base;
+      }
+
+      .description {
+        font-size: 0.875rem;
+        color: $gray-600;
+        margin-top: $spacing-2;
+
+        .dark & {
+          color: $gray-400;
+        }
+      }
+    }
+
+    .imageUpload {
+      padding-top: $spacing-2;
+      border-top: 1px solid $gray-200;
+
+      .dark & {
+        border-color: $dark-border;
+      }
+
+      .uploadLabel {
+        font-weight: 500;
+        color: $gray-900;
+        display: block;
+        margin-bottom: $spacing-2;
+
+        .dark & {
+          color: $dark-text;
+        }
+      }
+
+      .imagePreview {
+        position: relative;
+
+        .previewContainer {
+          position: relative;
+          width: 100%;
+          height: 12rem;
+          background: $gray-100;
+          border-radius: $radius-lg;
+          overflow: hidden;
+
+          .dark & {
+            background: $dark-bg;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+
+        .removeButton {
+          position: absolute;
+          top: $spacing-2;
+          right: $spacing-2;
+          @include button-base;
+          background: $secondary-red;
+          color: $white;
+          border-radius: $radius-full;
+          width: 2rem;
+          height: 2rem;
+          padding: 0;
+          @include flex-center;
+
+          svg {
+            width: 1rem;
+            height: 1rem;
+          }
+
+          &:hover {
+            background: darken($secondary-red, 10%);
+          }
+        }
+      }
+
+      .uploadArea {
+        border: 2px dashed $gray-300;
+        border-radius: $radius-lg;
+        padding: $spacing-8;
+        text-align: center;
+        cursor: pointer;
+        transition: all $transition-fast;
+
+        .dark & {
+          border-color: $dark-border;
+        }
+
+        &:hover {
+          border-color: $primary-blue;
+
+          .dark & {
+            border-color: $primary-blue-light;
+          }
+        }
+
+        .uploadContent {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: $spacing-2;
+
+          .iconContainer {
+            width: 3rem;
+            height: 3rem;
+            background: lighten($primary-blue, 35%);
+            border-radius: $radius-full;
+            @include flex-center;
+
+            .dark & {
+              background: rgba($primary-blue, 0.2);
+            }
+
+            svg {
+              width: 1.5rem;
+              height: 1.5rem;
+              color: $primary-blue;
+
+              .dark & {
+                color: $primary-blue-light;
+              }
+            }
+          }
+
+          .uploadText {
+            font-weight: 500;
+            color: $gray-900;
+
+            .dark & {
+              color: $dark-text;
+            }
+          }
+
+          .uploadSubtext {
+            font-size: 0.875rem;
+            color: $gray-500;
+
+            .dark & {
+              color: $gray-400;
+            }
+          }
+
+          .uploadIcon {
+            width: 1.25rem;
+            height: 1.25rem;
+            color: $gray-400;
+          }
+        }
+      }
+    }
+
+    .submitButton {
+      @include button-base;
+      width: 100%;
+      background: $primary-blue;
+      color: $white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: $spacing-2;
+      margin-top: $spacing-4;
+
+      &:hover {
+        background: $primary-blue-dark;
+      }
+
+      &:disabled {
+        background: $gray-300;
+        cursor: not-allowed;
+
+        .dark & {
+          background: $gray-700;
+        }
+      }
+
+      svg {
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+  }
+}

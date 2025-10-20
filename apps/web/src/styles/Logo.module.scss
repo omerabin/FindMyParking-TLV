@@ -1,0 +1,57 @@
+@import './variables';
+@import './mixins';
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: $spacing-2;
+
+  .icon {
+    @include flex-center;
+    background: linear-gradient(135deg, $primary-blue 0%, $primary-blue-dark 100%);
+    border-radius: $radius-lg;
+    box-shadow: $shadow-md;
+
+    &.sm {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    &.md {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    &.lg {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    svg {
+      width: 66.67%;
+      height: 66.67%;
+      color: $white;
+      fill: $white;
+    }
+  }
+
+  .text {
+    font-weight: 600;
+    background: linear-gradient(135deg, $primary-blue 0%, $primary-blue-dark 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    &.sm {
+      font-size: 1rem;
+    }
+
+    &.md {
+      font-size: 1.125rem;
+    }
+
+    &.lg {
+      font-size: 1.25rem;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@import './variables';
+@import './mixins';
+
+.emptyState {
+  @include flex-center;
+  @include flex-column;
+  height: 100%;
+  padding: $spacing-8;
+  text-align: center;
+
+  .iconContainer {
+    width: 4rem;
+    height: 4rem;
+    background: $gray-100;
+    border-radius: $radius-full;
+    @include flex-center;
+    margin-bottom: $spacing-4;
+
+    .dark & {
+      background: $dark-bg-secondary;
+    }
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+      color: $gray-400;
+
+      .dark & {
+        color: $gray-500;
+      }
+    }
+  }
+
+  .title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: $gray-900;
+    margin-bottom: $spacing-2;
+
+    .dark & {
+      color: $dark-text;
+    }
+  }
+
+  .description {
+    font-size: 0.875rem;
+    color: $gray-500;
+    margin-bottom: $spacing-6;
+    max-width: 24rem;
+
+    .dark & {
+      color: $gray-400;
+    }
+  }
+
+  .retryButton {
+    @include button-base;
+    background: $primary-blue;
+    color: $white;
+
+    &:hover {
+      background: $primary-blue-dark;
+    }
+  }
+}
