@@ -14,13 +14,13 @@ const Select = ({
   ...props
 }: React.ComponentProps<typeof SelectPrimitive.Root>) => {
   return <SelectPrimitive.Root data-slot="select" {...props} />;
-}
+};
 
-const SelectGroup => ({
+const SelectGroup = ({
   ...props
 }: React.ComponentProps<typeof SelectPrimitive.Group>) => {
   return <SelectPrimitive.Group data-slot="select-group" {...props} />;
-}
+};
 
 const SelectValue = ({
   ...props
