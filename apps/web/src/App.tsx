@@ -3,12 +3,12 @@ import { Map, List, ArrowUpDown } from 'lucide-react';
 import { LanguageProvider, useLanguage } from './contexts/LanguageContext';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { Header } from './components/Header';
-import { SearchBarV2 } from './components/SearchBarV2';
-import { FilterPanelV2 } from './components/FilterPanelV2';
+import { SearchBar } from './components/SearchBar';
+import { FilterPanel } from './components/FilterPanel';
 import { MapView } from './components/MapView';
-import { ParkingListItemV2 } from './components/ParkingListV2';
-import { ParkingDetailsV2 } from './components/ParkingDetailsV2';
-import { OwnerDashboardV2 } from './components/OwnerDashboardV2';
+import { ParkingListItem } from './components/ParkingList';
+import { ParkingDetails } from './components/ParkingDetails';
+import { OwnerDashboard } from './components/OwnerDashboard';
 import { EmptyState } from './components/EmptyState';
 import { LoadingSpinner } from './components/LoadingSpinner';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './components/ui/tabs';
@@ -525,14 +525,14 @@ const AppContent = () => {
 
   // Show owner dashboard
   if (showOwnerDashboard) {
-    return <OwnerDashboardV2 onClose={() => setShowOwnerDashboard(false)} />;
+    return <OwnerDashboard onClose={() => setShowOwnerDashboard(false)} />;
   }
 
   // Show parking details
   if (selectedParking !== null) {
     const parking = mockParkingLots.find((p) => p.id === selectedParking);
     if (parking) {
-      return <ParkingDetailsV2 parking={parking} onBack={handleBack} />;
+      return <ParkingDetails parking={parking} onBack={handleBack} />;
     }
   }
 
@@ -544,7 +544,7 @@ const AppContent = () => {
       {/* Search Section */}
       <div className="bg-gradient-to-r from-blue-600 to-blue-700 p-4 shadow-md">
         <div className="container mx-auto max-w-4xl">
-          <SearchBarV2
+          <SearchBar
             value={searchValue}
             onChange={setSearchValue}
             onClear={() => setSearchValue('')}
@@ -556,7 +556,7 @@ const AppContent = () => {
       <div className="border-b dark:border-gray-800 bg-white dark:bg-gray-900 p-3 shadow-sm">
         <div className="container mx-auto max-w-4xl flex items-center justify-between gap-2 flex-wrap">
           <div className="flex items-center gap-2">
-            <FilterPanelV2
+            <FilterPanel
               priceRange={priceRange}
               onPriceRangeChange={setPriceRange}
               selectedTypes={selectedTypes}
@@ -627,7 +627,7 @@ const AppContent = () => {
                 className="flex-1 m-0 overflow-y-auto p-4 space-y-3 bg-gray-50 dark:bg-gray-900"
               >
                 {filteredLots.map((lot) => (
-                  <ParkingListItemV2
+                  <ParkingListItem
                     key={lot.id}
                     id={lot.id}
                     name={lot.name}

@@ -13,7 +13,7 @@ import { Badge } from './ui/badge';
 import { Button } from './ui/button';
 import { useLanguage } from '../contexts/LanguageContext';
 
-interface ParkingListItemV2Props {
+interface ParkingListItemProps {
   id: number;
   name: string;
   address: string;
@@ -28,7 +28,7 @@ interface ParkingListItemV2Props {
   onClick: () => void;
 }
 
-export const ParkingListItemV2 = ({
+export const ParkingListItem = ({
   name,
   address,
   price,
@@ -40,7 +40,7 @@ export const ParkingListItemV2 = ({
   pango,
   celloPark,
   onClick,
-}: ParkingListItemV2Props) => {
+}: ParkingListItemProps) => {
   const { t, dir } = useLanguage();
 
   const getTypeIcon = () => {
