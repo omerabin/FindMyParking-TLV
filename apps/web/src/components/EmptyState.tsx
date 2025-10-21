@@ -7,7 +7,7 @@ interface EmptyStateProps {
   onRetry?: () => void;
 }
 
-export function EmptyState({ type, onRetry }: EmptyStateProps) {
+export const EmptyState = ({ type, onRetry }: EmptyStateProps) => {
   const { t } = useLanguage();
 
   const configs = {
@@ -52,4 +52,4 @@ export function EmptyState({ type, onRetry }: EmptyStateProps) {
       {onRetry && <Button onClick={onRetry}>{t('tryAgain')}</Button>}
     </div>
   );
-}
+};

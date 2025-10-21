@@ -20,14 +20,14 @@ interface FilterPanelProps {
   onMaxDistanceChange: (distance: number) => void;
 }
 
-export function FilterPanel({
+export const FilterPanel = ({
   priceRange,
   onPriceRangeChange,
   selectedTypes,
   onTypesChange,
   maxDistance,
   onMaxDistanceChange,
-}: FilterPanelProps) {
+}: FilterPanelProps) => {
   const parkingTypes = [
     { id: 'covered', label: 'מקורה', icon: Umbrella },
     { id: 'open', label: 'פתוח', icon: Sun },
@@ -128,4 +128,4 @@ export function FilterPanel({
       </SheetContent>
     </Sheet>
   );
-}
+};

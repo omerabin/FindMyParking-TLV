@@ -22,7 +22,7 @@ interface FilterPanelV2Props {
   onClearFilters: () => void;
 }
 
-export function FilterPanelV2({
+export const FilterPanelV2 = ({
   priceRange,
   onPriceRangeChange,
   selectedTypes,
@@ -30,7 +30,7 @@ export function FilterPanelV2({
   maxDistance,
   onMaxDistanceChange,
   onClearFilters,
-}: FilterPanelV2Props) {
+}: FilterPanelV2Props) => {
   const { t, dir } = useLanguage();
 
   const parkingTypes = [
@@ -144,4 +144,4 @@ export function FilterPanelV2({
       </SheetContent>
     </Sheet>
   );
-}
+};

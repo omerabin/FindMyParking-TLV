@@ -1,7 +1,7 @@
 import { Car } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
-export function LoadingSpinner() {
+export const LoadingSpinner = () => {
   const { t } = useLanguage();
 
   return (
@@ -15,4 +15,4 @@ export function LoadingSpinner() {
       </p>
     </div>
   );
-}
+};

@@ -474,7 +474,7 @@ const mockParkingLotsEn: ParkingLot[] = [
   },
 ];
 
-function AppContent() {
+const AppContent = () => {
   const { t, dir, language } = useLanguage();
 
   const [searchValue, setSearchValue] = useState('');
@@ -650,9 +650,9 @@ function AppContent() {
       </div>
     </div>
   );
-}
+};
 
-export default function App() {
+const App = () => {
   return (
     <ThemeProvider>
       <LanguageProvider>
@@ -660,4 +660,6 @@ export default function App() {
       </LanguageProvider>
     </ThemeProvider>
   );
-}
+};
+
+export default App;

@@ -38,7 +38,7 @@ interface ParkingDetailsProps {
   onBack: () => void;
 }
 
-export function ParkingDetails({ parking, onBack }: ParkingDetailsProps) {
+export const ParkingDetails = ({ parking, onBack }: ParkingDetailsProps) => {
   const getTypeIcon = () => {
     switch (parking.type) {
       case 'covered':
@@ -165,4 +165,4 @@ export function ParkingDetails({ parking, onBack }: ParkingDetailsProps) {
       </div>
     </div>
   );
-}
+};

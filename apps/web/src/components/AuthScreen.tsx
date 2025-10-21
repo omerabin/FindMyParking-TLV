@@ -14,7 +14,10 @@ interface AuthScreenProps {
   defaultTab?: 'login' | 'signup';
 }
 
-export function AuthScreen({ onClose, defaultTab = 'login' }: AuthScreenProps) {
+export const AuthScreen = ({
+  onClose,
+  defaultTab = 'login',
+}: AuthScreenProps) => {
   const { t, dir } = useLanguage();
   const { login, signup } = useAuth();
 
@@ -238,4 +241,4 @@ export function AuthScreen({ onClose, defaultTab = 'login' }: AuthScreenProps) {
       </Card>
     </div>
   );
-}
+};

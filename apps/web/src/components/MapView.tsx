@@ -15,7 +15,7 @@ interface MapViewProps {
   onParkingSelect: (id: number) => void;
 }
 
-export function MapView({ parkingLots, onParkingSelect }: MapViewProps) {
+export const MapView = ({ parkingLots, onParkingSelect }: MapViewProps) => {
   return (
     <div className="relative w-full h-full bg-gradient-to-br from-blue-50 to-green-50 dark:from-gray-800 dark:to-gray-900 rounded-lg overflow-hidden">
       {/* Mock map background */}
@@ -70,4 +70,4 @@ export function MapView({ parkingLots, onParkingSelect }: MapViewProps) {
       ))}
     </div>
   );
-}
+};

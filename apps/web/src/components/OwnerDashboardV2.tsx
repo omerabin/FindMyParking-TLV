@@ -29,7 +29,7 @@ interface OwnerDashboardV2Props {
   onClose: () => void;
 }
 
-export function OwnerDashboardV2({ onClose }: OwnerDashboardV2Props) {
+export const OwnerDashboardV2 = ({ onClose }: OwnerDashboardV2Props) => {
   const { t, dir } = useLanguage();
   const [uploadedPriceImage, setUploadedPriceImage] = useState<string | null>(
     null
@@ -405,4 +405,4 @@ export function OwnerDashboardV2({ onClose }: OwnerDashboardV2Props) {
       </div>
     </div>
   );
-}
+};

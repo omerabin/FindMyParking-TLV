@@ -14,7 +14,7 @@ interface HeaderProps {
   onOwnerDashboardClick: () => void;
 }
 
-export function Header({ onOwnerDashboardClick }: HeaderProps) {
+export const Header = ({ onOwnerDashboardClick }: HeaderProps) => {
   const { language, setLanguage, t, dir } = useLanguage();
   const { theme, toggleTheme } = useTheme();
 
@@ -69,4 +69,4 @@ export function Header({ onOwnerDashboardClick }: HeaderProps) {
       </div>
     </header>
   );
-}
+};

@@ -9,7 +9,7 @@ interface OwnerDashboardProps {
   onClose: () => void;
 }
 
-export function OwnerDashboard({ onClose }: OwnerDashboardProps) {
+export const OwnerDashboard = ({ onClose }: OwnerDashboardProps) => {
   const ownerLots = [
     {
       id: 1,
@@ -170,4 +170,4 @@ export function OwnerDashboard({ onClose }: OwnerDashboardProps) {
       </div>
     </div>
   );
-}
+};

@@ -20,7 +20,7 @@ interface UserProfileProps {
   onClose: () => void;
 }
 
-export function UserProfile({ onClose }: UserProfileProps) {
+export const UserProfile = ({ onClose }: UserProfileProps) => {
   const { t, dir, language, setLanguage } = useLanguage();
   const { theme, toggleTheme } = useTheme();
 
@@ -188,4 +188,4 @@ export function UserProfile({ onClose }: UserProfileProps) {
       </div>
     </div>
   );
-}
+};

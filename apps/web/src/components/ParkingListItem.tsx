@@ -14,7 +14,7 @@ interface ParkingListItemProps {
   onClick: () => void;
 }
 
-export function ParkingListItem({
+export const ParkingListItem = ({
   name,
   address,
   price,
@@ -23,7 +23,7 @@ export function ParkingListItem({
   reviewCount,
   type,
   onClick,
-}: ParkingListItemProps) {
+}: ParkingListItemProps) => {
   const getTypeIcon = () => {
     switch (type) {
       case 'covered':
@@ -93,4 +93,4 @@ export function ParkingListItem({
       </div>
     </Card>
   );
-}
+};

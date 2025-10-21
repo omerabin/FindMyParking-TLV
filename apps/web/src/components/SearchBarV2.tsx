@@ -9,7 +9,7 @@ interface SearchBarV2Props {
   onClear: () => void;
 }
 
-export function SearchBarV2({ value, onChange, onClear }: SearchBarV2Props) {
+export const SearchBarV2 = ({ value, onChange, onClear }: SearchBarV2Props) => {
   const { t, dir } = useLanguage();
 
   return (
@@ -37,4 +37,4 @@ export function SearchBarV2({ value, onChange, onClear }: SearchBarV2Props) {
       )}
     </div>
   );
-}
+};

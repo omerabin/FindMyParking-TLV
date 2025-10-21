@@ -28,7 +28,7 @@ interface ParkingListItemV2Props {
   onClick: () => void;
 }
 
-export function ParkingListItemV2({
+export const ParkingListItemV2 = ({
   name,
   address,
   price,
@@ -40,7 +40,7 @@ export function ParkingListItemV2({
   pango,
   celloPark,
   onClick,
-}: ParkingListItemV2Props) {
+}: ParkingListItemV2Props) => {
   const { t, dir } = useLanguage();
 
   const getTypeIcon = () => {
@@ -148,4 +148,4 @@ export function ParkingListItemV2({
       </div>
     </Card>
   );
-}
+};

@@ -56,7 +56,10 @@ interface ParkingDetailsV2Props {
   onBack: () => void;
 }
 
-export function ParkingDetailsV2({ parking, onBack }: ParkingDetailsV2Props) {
+export const ParkingDetailsV2 = ({
+  parking,
+  onBack,
+}: ParkingDetailsV2Props) => {
   const { t, dir } = useLanguage();
 
   const getTypeIcon = () => {
@@ -351,4 +354,4 @@ export function ParkingDetailsV2({ parking, onBack }: ParkingDetailsV2Props) {
       </div>
     </div>
   );
-}
+};

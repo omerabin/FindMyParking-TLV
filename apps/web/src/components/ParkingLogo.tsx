@@ -1,4 +1,4 @@
-export function ParkingLogo({ size = 40 }: { size?: number }) {
+export const ParkingLogo = ({ size = 40 }: { size?: number }) => {
   return (
     <svg
       width={size}
@@ -36,4 +36,4 @@ export function ParkingLogo({ size = 40 }: { size?: number }) {
       </text>
     </svg>
   );
-}
+};

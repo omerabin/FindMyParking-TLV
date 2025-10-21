@@ -8,7 +8,7 @@ interface SearchBarProps {
   onClear: () => void;
 }
 
-export function SearchBar({ value, onChange, onClear }: SearchBarProps) {
+export const SearchBar = ({ value, onChange, onClear }: SearchBarProps) => {
   return (
     <div className="relative">
       <Input
@@ -32,4 +32,4 @@ export function SearchBar({ value, onChange, onClear }: SearchBarProps) {
       )}
     </div>
   );
-}
+};
