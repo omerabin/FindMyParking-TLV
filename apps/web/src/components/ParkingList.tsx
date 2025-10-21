@@ -73,8 +73,7 @@ export const ParkingListItem = ({
 
   return (
     <Card
-      className="p-4 cursor-pointer hover:shadow-lg transition-all dark:bg-gray-800 dark:border-gray-700"
-      onClick={onClick}
+      className="p-4 hover:shadow-lg transition-all dark:bg-gray-800 dark:border-gray-700"
       dir={dir}
     >
       <div className="space-y-3">
@@ -142,7 +141,12 @@ export const ParkingListItem = ({
           )}
         </div>
 
-        <Button variant="outline" className="w-full" size="sm">
+        <Button
+          variant="outline"
+          className="w-full"
+          size="sm"
+          onClick={onClick}
+        >
           {t('moreDetails')}
         </Button>
       </div>
