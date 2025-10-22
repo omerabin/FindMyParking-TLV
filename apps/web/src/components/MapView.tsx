@@ -47,7 +47,7 @@ export const MapView = ({ parkingLots, onParkingSelect }: MapViewProps) => {
         <button
           key={lot.id}
           onClick={() => onParkingSelect(lot.id)}
-          className="absolute z-10 transform -translate-x-1/2 -translate-y-1/2 hover:scale-110 transition-transform"
+          className="absolute z-10 transform -translate-x-1/2 -translate-y-1/2 hover:scale-110 transition-transform cursor-pointer"
           style={{ left: `${lot.x}%`, top: `${lot.y}%` }}
         >
           <div className="flex flex-col items-center gap-1">

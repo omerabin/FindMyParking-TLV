@@ -572,15 +572,19 @@ const AppContent = () => {
                 setSortBy(value as 'price' | 'distance')
               }
             >
-              <SelectTrigger className="w-40 dark:bg-gray-800 dark:border-gray-700">
+              <SelectTrigger className="w-40 dark:bg-gray-800 dark:border-gray-700 cursor-pointer">
                 <div className="flex items-center gap-2">
                   <ArrowUpDown className="w-4 h-4" />
                   <SelectValue />
                 </div>
               </SelectTrigger>
               <SelectContent dir={dir} className="dark:bg-gray-800">
-                <SelectItem value="price">{t('sortByPrice')}</SelectItem>
-                <SelectItem value="distance">{t('sortByDistance')}</SelectItem>
+                <SelectItem value="price" className="cursor-pointer">
+                  {t('sortByPrice')}
+                </SelectItem>
+                <SelectItem value="distance" className="cursor-pointer">
+                  {t('sortByDistance')}
+                </SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -605,11 +609,11 @@ const AppContent = () => {
               className="h-full flex flex-col"
             >
               <TabsList className="w-full grid grid-cols-2 rounded-none">
-                <TabsTrigger value="map" className="gap-2">
+                <TabsTrigger value="map" className="gap-2 cursor-pointer">
                   <Map className="w-4 h-4" />
                   {t('map')}
                 </TabsTrigger>
-                <TabsTrigger value="list" className="gap-2">
+                <TabsTrigger value="list" className="gap-2 cursor-pointer">
                   <List className="w-4 h-4" />
                   {t('list')}
                 </TabsTrigger>
