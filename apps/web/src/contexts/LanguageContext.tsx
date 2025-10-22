@@ -131,6 +131,10 @@ const translations: Translations = {
   lotCount: { he: 'חניונים', en: 'lots' },
   occupied: { he: 'תפוס', en: 'occupied' },
   available: { he: 'פנוי', en: 'available' },
+
+  // Map Prices
+  priceHour: { he: 'לשעה', en: 'hr' },
+  priceDaily: { he: 'ליום', en: 'day' },
 };
 
 interface LanguageContextType {

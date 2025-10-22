@@ -25,7 +25,7 @@ interface ParkingLot {
   name: string;
   address: string;
   price: number;
-  priceDaily?: number;
+  priceDaily: number;
   priceMonthly?: number;
   distance: number;
   rating: number;

@@ -2,11 +2,13 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import { Badge } from './ui/badge';
 import 'leaflet/dist/leaflet.css';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface ParkingLot {
   id: number;
   name: string;
   price: number;
+  priceDaily: number;
   lat: number;
   lng: number;
   type: 'covered' | 'open' | 'secure';
@@ -17,37 +19,54 @@ interface MapViewProps {
   onParkingSelect: (id: number) => void;
 }
 
-const parkingIcon = new L.Icon({
-  iconUrl: 'https://cdn-icons-png.flaticon.com/512/252/252025.png', // simple parking icon
-  iconSize: [30, 30],
-  iconAnchor: [15, 30],
-  popupAnchor: [0, -30],
-});
+const createCustomIcon = (
+  price: number,
+  priceDaily: number,
+  translation: (key: string) => string
+) =>
+  L.divIcon({
+    className: 'custom-parking-icon',
+    html: `
+        <div class="flex flex-col items-center text-center transform hover:scale-105 transition-transform">
+          <div class="bg-blue-600 text-white text-xs px-2 py-1 rounded-lg shadow-md border border-white">
+            ₪${price}/${translation('priceHour')} ₪${priceDaily}/${translation('priceDaily')}
+          </div>
+          <div class="mt-1 w-6 h-6 bg-blue-700 rounded-full border-2 border-white shadow-md flex items-center justify-center">
+            <span class="text-white text-xs">P</span>
+          </div>
+        </div>
+      `,
+    iconSize: [60, 40],
+    iconAnchor: [35, 40],
+    popupAnchor: [0, -40],
+  });
 
 export const MapView = ({ parkingLots, onParkingSelect }: MapViewProps) => {
+  const { t } = useLanguage();
+
   return (
     <div className="relative w-full h-full rounded-lg overflow-hidden">
       <MapContainer
-        {...({
+        {...{
           center: [32.0853, 34.7818],
           zoom: 14,
           className: 'w-full h-full',
           scrollWheelZoom: true,
-        } as any)}
+        }}
       >
         <TileLayer
-          {...({
+          {...{
             url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
             attribution:
               '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-          } as any)}
+          }}
         />
 
         {parkingLots.map((lot) => (
           <Marker
             key={lot.id}
             position={[lot.lat, lot.lng]}
-            icon={parkingIcon}
+            icon={createCustomIcon(lot.price, lot.priceDaily, t)}
             eventHandlers={{
               click: () => onParkingSelect(lot.id),
             }}
