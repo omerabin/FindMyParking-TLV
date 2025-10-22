@@ -14,7 +14,7 @@ interface HeaderProps {
   onOwnerDashboardClick: () => void;
 }
 
-export const Header = ({ onOwnerDashboardClick }: HeaderProps) => {
+export function Header({ onOwnerDashboardClick }: HeaderProps) {
   const { language, setLanguage, t, dir } = useLanguage();
   const { theme, toggleTheme } = useTheme();
 
@@ -35,12 +35,26 @@ export const Header = ({ onOwnerDashboardClick }: HeaderProps) => {
                   </span>
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent dir={dir}>
-                <DropdownMenuItem onClick={() => setLanguage('he')}>
-                  עברית
+              <DropdownMenuContent
+                align="end"
+                dir={dir}
+                className="dark:bg-gray-800 dark:border-gray-700"
+              >
+                <DropdownMenuItem
+                  onSelect={() => setLanguage('he')}
+                  className={
+                    language === 'he' ? 'bg-blue-50 dark:bg-blue-900/20' : ''
+                  }
+                >
+                  עברית {language === 'he' && '✓'}
                 </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setLanguage('en')}>
-                  English
+                <DropdownMenuItem
+                  onSelect={() => setLanguage('en')}
+                  className={
+                    language === 'en' ? 'bg-blue-50 dark:bg-blue-900/20' : ''
+                  }
+                >
+                  English {language === 'en' && '✓'}
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -69,4 +83,4 @@ export const Header = ({ onOwnerDashboardClick }: HeaderProps) => {
       </div>
     </header>
   );
-};
+}
