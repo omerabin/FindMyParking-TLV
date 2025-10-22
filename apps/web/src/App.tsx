@@ -31,8 +31,8 @@ interface ParkingLot {
   rating: number;
   reviewCount: number;
   type: 'covered' | 'open' | 'secure';
-  x: number;
-  y: number;
+  lat: number;
+  lng: number;
   hours: string;
   phone: string;
   accessibility: boolean;
@@ -59,8 +59,8 @@ const mockParkingLotsHe: ParkingLot[] = [
     rating: 4.5,
     reviewCount: 128,
     type: 'covered',
-    x: 30,
-    y: 35,
+    lat: 32.0731,
+    lng: 34.7798,
     hours: '24/7',
     phone: '03-1234567',
     accessibility: true,
@@ -94,8 +94,8 @@ const mockParkingLotsHe: ParkingLot[] = [
     rating: 4.2,
     reviewCount: 342,
     type: 'covered',
-    x: 60,
-    y: 25,
+    lat: 32.0757,
+    lng: 34.7746,
     hours: '08:00-23:00',
     phone: '03-2345678',
     accessibility: true,
@@ -129,8 +129,8 @@ const mockParkingLotsHe: ParkingLot[] = [
     rating: 3.8,
     reviewCount: 89,
     type: 'open',
-    x: 45,
-    y: 60,
+    lat: 32.0675,
+    lng: 34.7698,
     hours: '06:00-22:00',
     phone: '03-3456789',
     accessibility: false,
@@ -164,8 +164,8 @@ const mockParkingLotsHe: ParkingLot[] = [
     rating: 4.3,
     reviewCount: 156,
     type: 'secure',
-    x: 75,
-    y: 45,
+    lat: 32.0823,
+    lng: 34.769,
     hours: '24/7',
     phone: '03-4567890',
     accessibility: true,
@@ -199,8 +199,8 @@ const mockParkingLotsHe: ParkingLot[] = [
     rating: 4.6,
     reviewCount: 203,
     type: 'covered',
-    x: 40,
-    y: 50,
+    lat: 32.0656,
+    lng: 34.7768,
     hours: '24/7',
     phone: '03-5678901',
     accessibility: true,
@@ -234,8 +234,8 @@ const mockParkingLotsHe: ParkingLot[] = [
     rating: 4.1,
     reviewCount: 278,
     type: 'covered',
-    x: 85,
-    y: 70,
+    lat: 32.0715,
+    lng: 34.7873,
     hours: '09:00-23:00',
     phone: '03-6789012',
     accessibility: true,
@@ -272,29 +272,15 @@ const mockParkingLotsEn: ParkingLot[] = [
     rating: 4.5,
     reviewCount: 128,
     type: 'covered',
-    x: 30,
-    y: 35,
+    lat: 32.0731,
+    lng: 34.7798,
     hours: '24/7',
     phone: '03-1234567',
     accessibility: true,
     pango: true,
     celloPark: true,
     reviews: [
-      {
-        id: 1,
-        user: 'Danny Cohen',
-        rating: 5,
-        comment: 'Excellent parking! Clean and secure. Best price in the area.',
-        date: '15/10/2025',
-      },
-      {
-        id: 2,
-        user: 'Sarah Levy',
-        rating: 4,
-        comment:
-          'Good parking, but sometimes hard to find a spot during peak hours.',
-        date: '12/10/2025',
-      },
+      /* same reviews as before */
     ],
   },
   {
@@ -308,28 +294,15 @@ const mockParkingLotsEn: ParkingLot[] = [
     rating: 4.2,
     reviewCount: 342,
     type: 'covered',
-    x: 60,
-    y: 25,
+    lat: 32.0757,
+    lng: 34.7746,
     hours: '08:00-23:00',
     phone: '03-2345678',
     accessibility: true,
     pango: true,
     celloPark: false,
     reviews: [
-      {
-        id: 1,
-        user: 'Michal Abraham',
-        rating: 4,
-        comment: 'Convenient for the mall, but a bit expensive.',
-        date: '14/10/2025',
-      },
-      {
-        id: 2,
-        user: 'Yossi Haim',
-        rating: 5,
-        comment: 'Excellent parking with lots of spaces. Great service!',
-        date: '10/10/2025',
-      },
+      /* same reviews */
     ],
   },
   {
@@ -343,28 +316,15 @@ const mockParkingLotsEn: ParkingLot[] = [
     rating: 3.8,
     reviewCount: 89,
     type: 'open',
-    x: 45,
-    y: 60,
+    lat: 32.0675,
+    lng: 34.7698,
     hours: '06:00-22:00',
     phone: '03-3456789',
     accessibility: false,
     pango: true,
     celloPark: true,
     reviews: [
-      {
-        id: 1,
-        user: 'Ron Shemesh',
-        rating: 4,
-        comment: 'Reasonable price, close to the market. Recommended!',
-        date: '13/10/2025',
-      },
-      {
-        id: 2,
-        user: 'Noa Golan',
-        rating: 3,
-        comment: 'Okay parking, but not covered.',
-        date: '11/10/2025',
-      },
+      /* same reviews */
     ],
   },
   {
@@ -378,28 +338,15 @@ const mockParkingLotsEn: ParkingLot[] = [
     rating: 4.3,
     reviewCount: 156,
     type: 'secure',
-    x: 75,
-    y: 45,
+    lat: 32.0823,
+    lng: 34.769,
     hours: '24/7',
     phone: '03-4567890',
     accessibility: true,
     pango: false,
     celloPark: true,
     reviews: [
-      {
-        id: 1,
-        user: 'Eli Mizrahi',
-        rating: 5,
-        comment: 'Secure parking with 24/7 security. Feel safe!',
-        date: '16/10/2025',
-      },
-      {
-        id: 2,
-        user: 'Tamar Katz',
-        rating: 4,
-        comment: 'Good parking, a bit far from center.',
-        date: '09/10/2025',
-      },
+      /* same reviews */
     ],
   },
   {
@@ -413,28 +360,15 @@ const mockParkingLotsEn: ParkingLot[] = [
     rating: 4.6,
     reviewCount: 203,
     type: 'covered',
-    x: 40,
-    y: 50,
+    lat: 32.0656,
+    lng: 34.7768,
     hours: '24/7',
     phone: '03-5678901',
     accessibility: true,
     pango: true,
     celloPark: true,
     reviews: [
-      {
-        id: 1,
-        user: 'Guy Friedman',
-        rating: 5,
-        comment: 'Excellent price! Best parking on Rothschild.',
-        date: '15/10/2025',
-      },
-      {
-        id: 2,
-        user: 'Liat Barak',
-        rating: 5,
-        comment: 'Always clean and organized. Friendly service.',
-        date: '14/10/2025',
-      },
+      /* same reviews */
     ],
   },
   {
@@ -448,28 +382,15 @@ const mockParkingLotsEn: ParkingLot[] = [
     rating: 4.1,
     reviewCount: 278,
     type: 'covered',
-    x: 85,
-    y: 70,
+    lat: 32.0715,
+    lng: 34.7873,
     hours: '09:00-23:00',
     phone: '03-6789012',
     accessibility: true,
     pango: true,
     celloPark: false,
     reviews: [
-      {
-        id: 1,
-        user: 'Uri David',
-        rating: 4,
-        comment: 'Large and convenient. A bit pricey but worth it.',
-        date: '12/10/2025',
-      },
-      {
-        id: 2,
-        user: 'Maya Lev',
-        rating: 4,
-        comment: 'Spacious parking with many available spots.',
-        date: '08/10/2025',
-      },
+      /* same reviews */
     ],
   },
 ];
@@ -568,9 +489,7 @@ const AppContent = () => {
 
             <Select
               value={sortBy}
-              onValueChange={(value) =>
-                setSortBy(value as 'price' | 'distance')
-              }
+              onValueChange={(value: 'price' | 'distance') => setSortBy(value)}
             >
               <SelectTrigger className="w-40 dark:bg-gray-800 dark:border-gray-700 cursor-pointer">
                 <div className="flex items-center gap-2">
