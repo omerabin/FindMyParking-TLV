@@ -280,7 +280,21 @@ const mockParkingLotsEn: ParkingLot[] = [
     pango: true,
     celloPark: true,
     reviews: [
-      /* same reviews as before */
+      {
+        id: 1,
+        user: 'Danny Cohen',
+        rating: 5,
+        comment: 'Excellent parking! Clean and secure. Best price in the area.',
+        date: '15/10/2025',
+      },
+      {
+        id: 2,
+        user: 'Sarah Levy',
+        rating: 4,
+        comment:
+          'Good parking, but sometimes hard to find a spot during peak hours.',
+        date: '12/10/2025',
+      },
     ],
   },
   {
@@ -302,7 +316,20 @@ const mockParkingLotsEn: ParkingLot[] = [
     pango: true,
     celloPark: false,
     reviews: [
-      /* same reviews */
+      {
+        id: 1,
+        user: 'Michal Abraham',
+        rating: 4,
+        comment: 'Convenient for the mall, but a bit expensive.',
+        date: '14/10/2025',
+      },
+      {
+        id: 2,
+        user: 'Yossi Haim',
+        rating: 5,
+        comment: 'Excellent parking with lots of spaces. Great service!',
+        date: '10/10/2025',
+      },
     ],
   },
   {
@@ -324,7 +351,20 @@ const mockParkingLotsEn: ParkingLot[] = [
     pango: true,
     celloPark: true,
     reviews: [
-      /* same reviews */
+      {
+        id: 1,
+        user: 'Ron Shemesh',
+        rating: 4,
+        comment: 'Reasonable price, close to the market. Recommended!',
+        date: '13/10/2025',
+      },
+      {
+        id: 2,
+        user: 'Noa Golan',
+        rating: 3,
+        comment: 'Okay parking, but not covered.',
+        date: '11/10/2025',
+      },
     ],
   },
   {
@@ -346,7 +386,20 @@ const mockParkingLotsEn: ParkingLot[] = [
     pango: false,
     celloPark: true,
     reviews: [
-      /* same reviews */
+      {
+        id: 1,
+        user: 'Eli Mizrahi',
+        rating: 5,
+        comment: 'Secure parking with 24/7 security. Feel safe!',
+        date: '16/10/2025',
+      },
+      {
+        id: 2,
+        user: 'Tamar Katz',
+        rating: 4,
+        comment: 'Good parking, a bit far from center.',
+        date: '09/10/2025',
+      },
     ],
   },
   {
@@ -368,7 +421,20 @@ const mockParkingLotsEn: ParkingLot[] = [
     pango: true,
     celloPark: true,
     reviews: [
-      /* same reviews */
+      {
+        id: 1,
+        user: 'Guy Friedman',
+        rating: 5,
+        comment: 'Excellent price! Best parking on Rothschild.',
+        date: '15/10/2025',
+      },
+      {
+        id: 2,
+        user: 'Liat Barak',
+        rating: 5,
+        comment: 'Always clean and organized. Friendly service.',
+        date: '14/10/2025',
+      },
     ],
   },
   {
@@ -390,7 +456,20 @@ const mockParkingLotsEn: ParkingLot[] = [
     pango: true,
     celloPark: false,
     reviews: [
-      /* same reviews */
+      {
+        id: 1,
+        user: 'Uri David',
+        rating: 4,
+        comment: 'Large and convenient. A bit pricey but worth it.',
+        date: '12/10/2025',
+      },
+      {
+        id: 2,
+        user: 'Maya Lev',
+        rating: 4,
+        comment: 'Spacious parking with many available spots.',
+        date: '08/10/2025',
+      },
     ],
   },
 ];
