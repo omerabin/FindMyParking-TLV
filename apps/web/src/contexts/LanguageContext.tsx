@@ -1,3 +1,4 @@
+import { OwnerDashboard } from '@/components/OwnerDashboard';
 import {
   createContext,
   useContext,
@@ -72,7 +73,14 @@ const translations: Translations = {
   celloPark: { he: 'CelloPark', en: 'CelloPark' },
 
   // Owner Dashboard
-  ownerDashboard: { he: 'פאנל בעלי חניונים', en: 'Owner Dashboard' },
+  ownerDashboard: {
+    he: 'בעל חניון? נהל כאן את החניונים שלך',
+    en: 'Owner Parking? Manage your lots here',
+  },
+  OwnerDashboardScreenTitle: {
+    he: 'פאנל בעלי חניונים',
+    en: 'Owner Dashboard',
+  },
   myLots: { he: 'החניונים שלי', en: 'My Parking Lots' },
   addNewLot: { he: 'הוסף חניון חדש', en: 'Add New Lot' },
   editLot: { he: 'ערוך', en: 'Edit' },

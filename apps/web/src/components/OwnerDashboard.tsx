@@ -94,7 +94,7 @@ export const OwnerDashboard = ({ onClose }: OwnerDashboardProps) => {
           </Button>
           <div className="flex items-center gap-2 flex-1">
             <Building2 className="w-6 h-6" />
-            <h1 className="text-xl">{t('ownerDashboard')}</h1>
+            <h1 className="text-xl">{t('OwnerDashboardScreenTitle')}</h1>
           </div>
         </div>
         <p className="text-blue-100 text-sm">
