@@ -4,6 +4,7 @@ import { Map, List, ArrowUpDown } from 'lucide-react';
 import { LanguageProvider, useLanguage } from './contexts/LanguageContext';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { Header } from './components/Header';
+import ErrorBoundary from './components/ErrorBoundary';
 import { SearchBar } from './components/SearchBar';
 import { FilterPanel } from './components/FilterPanel';
 import { MapView } from './components/MapView';
@@ -657,11 +658,13 @@ const AppContent = () => {
   );
 
   return (
-    <Routes>
-      <Route path="/" element={mainUI} />
-      <Route path="/parking/:id" element={<ParkingDetailsRoute />} />
-      <Route path="/owner" element={<OwnerDashboardRoute />} />
-    </Routes>
+    <ErrorBoundary>
+      <Routes>
+        <Route path="/" element={mainUI} />
+        <Route path="/parking/:id" element={<ParkingDetailsRoute />} />
+        <Route path="/owner" element={<OwnerDashboardRoute />} />
+      </Routes>
+    </ErrorBoundary>
   );
 };
 
