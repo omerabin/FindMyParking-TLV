@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Routes, Route, useNavigate, useParams } from 'react-router-dom';
 import { Map, List, ArrowUpDown } from 'lucide-react';
 import { LanguageProvider, useLanguage } from './contexts/LanguageContext';
 import { ThemeProvider } from './contexts/ThemeContext';
@@ -475,6 +476,7 @@ const mockParkingLotsEn: ParkingLot[] = [
 ];
 
 const AppContent = () => {
+  const navigate = useNavigate();
   const { t, dir, language } = useLanguage();
 
   const [searchValue, setSearchValue] = useState('');
@@ -486,14 +488,28 @@ const AppContent = () => {
   ]);
   const [maxDistance, setMaxDistance] = useState(2000);
   const [sortBy, setSortBy] = useState<'price' | 'distance'>('price');
-  const [selectedParking, setSelectedParking] = useState<number | null>(null);
-  const [showOwnerDashboard, setShowOwnerDashboard] = useState(false);
   const [activeTab, setActiveTab] = useState('map');
   const [isLoading, setIsLoading] = useState(false);
 
   // Use language-specific data
   const mockParkingLots =
     language === 'he' ? mockParkingLotsHe : mockParkingLotsEn;
+
+  const ParkingDetailsRoute = () => {
+    const { id } = useParams();
+    const pid = id ? Number(id) : null;
+    if (pid === null) return <div className="p-4">Invalid parking id</div>;
+    const parking = mockParkingLots.find((p) => p.id === pid);
+    if (!parking)
+      return (
+        <div className="p-4">{t('parkingNotFound') || 'Parking not found'}</div>
+      );
+    return <ParkingDetails parking={parking} onBack={() => navigate(-1)} />;
+  };
+
+  const OwnerDashboardRoute = () => {
+    return <OwnerDashboard onClose={() => navigate(-1)} />;
+  };
 
   // Filter and sort parking lots
   const filteredLots = mockParkingLots
@@ -510,11 +526,7 @@ const AppContent = () => {
     });
 
   const handleParkingSelect = (id: number) => {
-    setSelectedParking(id);
-  };
-
-  const handleBack = () => {
-    setSelectedParking(null);
+    navigate(`/parking/${id}`);
   };
 
   const handleClearFilters = () => {
@@ -523,23 +535,11 @@ const AppContent = () => {
     setMaxDistance(2000);
   };
 
-  // Show owner dashboard
-  if (showOwnerDashboard) {
-    return <OwnerDashboard onClose={() => setShowOwnerDashboard(false)} />;
-  }
-
-  // Show parking details
-  if (selectedParking !== null) {
-    const parking = mockParkingLots.find((p) => p.id === selectedParking);
-    if (parking) {
-      return <ParkingDetails parking={parking} onBack={handleBack} />;
-    }
-  }
-
-  return (
+  // Prepare main UI so it can be used as the root route element
+  const mainUI = (
     <div className="h-screen flex flex-col bg-white dark:bg-gray-900" dir={dir}>
       {/* Header */}
-      <Header onOwnerDashboardClick={() => setShowOwnerDashboard(true)} />
+      <Header onOwnerDashboardClick={() => navigate('/owner')} />
 
       {/* Search Section */}
       <div className="bg-gradient-to-r from-blue-600 to-blue-700 p-4 shadow-md">
@@ -651,6 +651,14 @@ const AppContent = () => {
         </div>
       </div>
     </div>
+  );
+
+  return (
+    <Routes>
+      <Route path="/" element={mainUI} />
+      <Route path="/parking/:id" element={<ParkingDetailsRoute />} />
+      <Route path="/owner" element={<OwnerDashboardRoute />} />
+    </Routes>
   );
 };
 
