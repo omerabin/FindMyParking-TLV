@@ -542,7 +542,10 @@ const AppContent = () => {
       <Header onOwnerDashboardClick={() => navigate('/owner')} />
 
       {/* Search Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-700 p-4 shadow-md">
+      <div
+        className="bg-gradient-to-r from-blue-600 to-blue-700 p-4 shadow-md
+  dark:from-gray-800 dark:to-gray-900"
+      >
         <div className="container mx-auto max-w-4xl">
           <SearchBar
             value={searchValue}
