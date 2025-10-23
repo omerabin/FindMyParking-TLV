@@ -119,8 +119,16 @@ export const OwnerDashboard = ({ onClose }: OwnerDashboardProps) => {
                   key={lot.id}
                   className="p-4 space-y-4 dark:bg-gray-800 dark:border-gray-700"
                 >
-                  <div className="flex justify-between items-start">
-                    <div className="space-y-1 flex-1">
+                  <div
+                    className={`flex items-start ${
+                      dir === 'rtl'
+                        ? 'flex-row justify-start'
+                        : 'flex-row justify-between'
+                    }`}
+                  >
+                    <div
+                      className={`space-y-1 flex-1 ${dir === 'rtl' ? 'text-right' : 'text-left'}`}
+                    >
                       <h3 className="font-medium dark:text-white">
                         {lot.name}
                       </h3>
@@ -128,10 +136,13 @@ export const OwnerDashboard = ({ onClose }: OwnerDashboardProps) => {
                         {lot.address}
                       </p>
                     </div>
-                    <Button variant="outline" size="sm">
-                      <Edit
-                        className={`w-4 h-4 ${dir === 'rtl' ? 'ml-1' : 'mr-1'}`}
-                      />
+
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className={dir === 'rtl' ? 'ml-auto' : 'ml-auto mr-0'}
+                    >
+                      <Edit />
                       {t('editLot')}
                     </Button>
                   </div>
@@ -174,19 +185,25 @@ export const OwnerDashboard = ({ onClose }: OwnerDashboardProps) => {
 
                   {/* Analytics */}
                   <div className="grid grid-cols-3 gap-3 text-sm">
-                    <div className="flex items-center gap-1 text-gray-600 dark:text-gray-400">
+                    <div
+                      className={`flex items-center gap-1 text-gray-600 dark:text-gray-400 ${dir === 'rtl' ? 'flex-row-reverse text-right' : ''}`}
+                    >
                       <TrendingUp className="w-4 h-4" />
                       <span>
                         {lot.searches} {t('searches')}
                       </span>
                     </div>
-                    <div className="flex items-center gap-1 text-gray-600 dark:text-gray-400">
+                    <div
+                      className={`flex items-center gap-1 text-gray-600 dark:text-gray-400 ${dir === 'rtl' ? 'flex-row-reverse text-right' : ''}`}
+                    >
                       <Eye className="w-4 h-4" />
                       <span>
                         {lot.visits} {t('visits')}
                       </span>
                     </div>
-                    <div className="flex items-center gap-1 text-gray-600 dark:text-gray-400">
+                    <div
+                      className={`flex items-center gap-1 text-gray-600 dark:text-gray-400 ${dir === 'rtl' ? 'flex-row-reverse text-right' : ''}`}
+                    >
                       <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                       <span>{lot.rating.toFixed(1)}</span>
                     </div>
@@ -194,7 +211,7 @@ export const OwnerDashboard = ({ onClose }: OwnerDashboardProps) => {
 
                   {/* Update Prices */}
                   <div className="space-y-3 pt-2 border-t dark:border-gray-700">
-                    <Label className="dark:text-white">
+                    <Label className="dark:text-white" dir={dir}>
                       {t('updatePrice')}
                     </Label>
                     <div className="grid grid-cols-2 gap-2">
@@ -202,6 +219,7 @@ export const OwnerDashboard = ({ onClose }: OwnerDashboardProps) => {
                         <Label
                           htmlFor={`entrance-${lot.id}`}
                           className="text-xs text-gray-600 dark:text-gray-400"
+                          dir={dir}
                         >
                           {dir === 'rtl' ? 'דמי כניסה (₪)' : 'Entrance Fee (₪)'}
                         </Label>
@@ -217,6 +235,7 @@ export const OwnerDashboard = ({ onClose }: OwnerDashboardProps) => {
                         <Label
                           htmlFor={`hourly-${lot.id}`}
                           className="text-xs text-gray-600 dark:text-gray-400"
+                          dir={dir}
                         >
                           {dir === 'rtl' ? 'מחיר לשעה (₪)' : 'Hourly Rate (₪)'}
                         </Label>
@@ -237,12 +256,14 @@ export const OwnerDashboard = ({ onClose }: OwnerDashboardProps) => {
           </TabsContent>
 
           <TabsContent value="add">
-            <Card className="p-6 space-y-4 dark:bg-gray-800 dark:border-gray-700">
-              <h3 className="font-medium dark:text-white">{t('addNewLot')}</h3>
+            <Card className="p-6 space-y-4 dark:bg-gray-800 dark:border-gray-700 r">
+              <h3 className="font-medium dark:text-white text-center mx-auto">
+                {t('addNewLot')}
+              </h3>
 
               <div className="space-y-4">
                 <div className="space-y-2">
-                  <Label htmlFor="name" className="dark:text-white">
+                  <Label htmlFor="name" className="dark:text-white" dir={dir}>
                     {t('lotName')}
                   </Label>
                   <Input
@@ -258,7 +279,11 @@ export const OwnerDashboard = ({ onClose }: OwnerDashboardProps) => {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="address" className="dark:text-white">
+                  <Label
+                    htmlFor="address"
+                    className="dark:text-white"
+                    dir={dir}
+                  >
                     {t('address')}
                   </Label>
                   <Input
@@ -274,7 +299,7 @@ export const OwnerDashboard = ({ onClose }: OwnerDashboardProps) => {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="spots" className="dark:text-white">
+                  <Label htmlFor="spots" className="dark:text-white" dir={dir}>
                     {t('capacity')}
                   </Label>
                   <Input
@@ -287,7 +312,7 @@ export const OwnerDashboard = ({ onClose }: OwnerDashboardProps) => {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="type" className="dark:text-white">
+                  <Label htmlFor="type" className="dark:text-white" dir={dir}>
                     {t('parkingType')}
                   </Label>
                   <Select>
@@ -306,7 +331,7 @@ export const OwnerDashboard = ({ onClose }: OwnerDashboardProps) => {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="hours" className="dark:text-white">
+                  <Label htmlFor="hours" className="dark:text-white" dir={dir}>
                     {t('hours')}
                   </Label>
                   <Input
@@ -318,7 +343,7 @@ export const OwnerDashboard = ({ onClose }: OwnerDashboardProps) => {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="phone" className="dark:text-white">
+                  <Label htmlFor="phone" className="dark:text-white" dir={dir}>
                     {t('phone')}
                   </Label>
                   <Input
@@ -331,7 +356,7 @@ export const OwnerDashboard = ({ onClose }: OwnerDashboardProps) => {
 
                 {/* Parking Price Image Upload */}
                 <div className="space-y-3 pt-2 border-t dark:border-gray-700">
-                  <Label className="dark:text-white">
+                  <Label className="dark:text-white" dir={dir}>
                     {dir === 'rtl'
                       ? 'תמונת מחירון חניה'
                       : 'Parking Prices Picture'}
