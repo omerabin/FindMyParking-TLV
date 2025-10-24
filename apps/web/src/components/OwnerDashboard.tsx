@@ -123,6 +123,10 @@ export const OwnerDashboard = ({ onClose }: OwnerDashboardProps) => {
                     className={` ${dir === 'rtl' ? '' : 'flex'} ${
                       dir === 'rtl' ? 'flex-row-reverse' : 'flex-row'
                     }`}
+                    style={{
+                      display: dir === 'rtl' ? 'flex' : undefined,
+                      flexDirection: dir === 'rtl' ? 'row-reverse' : undefined,
+                    }}
                   >
                     <div
                       className={`space-y-1 flex-1 ${dir === 'rtl' ? 'text-right' : 'text-left'}`}
