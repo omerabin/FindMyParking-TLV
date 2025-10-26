@@ -21,6 +21,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from './components/ui/select';
+import { OwnerLogin } from './components/OwnerLogin';
 
 interface ParkingLot {
   id: number;
@@ -509,7 +510,11 @@ const AppContent = () => {
   };
 
   const OwnerDashboardRoute = () => {
-    return <OwnerDashboard onClose={() => navigate(-1)} />;
+    return <OwnerDashboard onClose={() => navigate('/')} />;
+  };
+
+  const OwnerLoginRoute = () => {
+    return <OwnerLogin />;
   };
 
   // Filter and sort parking lots
@@ -540,7 +545,7 @@ const AppContent = () => {
   const mainUI = (
     <div className="h-screen flex flex-col bg-white dark:bg-gray-900" dir={dir}>
       {/* Header */}
-      <Header onOwnerDashboardClick={() => navigate('/owner')} />
+      <Header onOwnerDashboardClick={() => navigate('/ownerLogin')} />
 
       {/* Search Section */}
       <div
@@ -663,6 +668,7 @@ const AppContent = () => {
         <Route path="/" element={mainUI} />
         <Route path="/parking/:id" element={<ParkingDetailsRoute />} />
         <Route path="/owner" element={<OwnerDashboardRoute />} />
+        <Route path="/ownerLogin" element={<OwnerLoginRoute />} />
       </Routes>
     </ErrorBoundary>
   );
