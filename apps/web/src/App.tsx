@@ -21,7 +21,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from './components/ui/select';
-import { OwnerLogin } from './components/OwnerLogin';
+import OwnerLogin from './components/OwnerLogin';
 
 interface ParkingLot {
   id: number;
@@ -492,6 +492,7 @@ const AppContent = () => {
   const [sortBy, setSortBy] = useState<'price' | 'distance'>('price');
   const [activeTab, setActiveTab] = useState('map');
   const [isLoading, setIsLoading] = useState(false);
+  const [isOwnerLoginShown, setIsOwnerLoginShown] = useState(false);
 
   // Use language-specific data
   const mockParkingLots =
@@ -511,10 +512,6 @@ const AppContent = () => {
 
   const OwnerDashboardRoute = () => {
     return <OwnerDashboard onClose={() => navigate('/')} />;
-  };
-
-  const OwnerLoginRoute = () => {
-    return <OwnerLogin />;
   };
 
   // Filter and sort parking lots
@@ -545,12 +542,12 @@ const AppContent = () => {
   const mainUI = (
     <div className="h-screen flex flex-col bg-white dark:bg-gray-900" dir={dir}>
       {/* Header */}
-      <Header onOwnerDashboardClick={() => navigate('/ownerLogin')} />
+      <Header onOwnerDashboardClick={() => setIsOwnerLoginShown(true)} />
 
       {/* Search Section */}
       <div
         className="bg-gradient-to-r from-blue-600 to-blue-700 p-4 shadow-md
-  dark:from-gray-800 dark:to-gray-900"
+        dark:from-gray-800 dark:to-gray-900"
       >
         <div className="container mx-auto max-w-4xl">
           <SearchBar
@@ -659,6 +656,9 @@ const AppContent = () => {
           )}
         </div>
       </div>
+      {isOwnerLoginShown && (
+        <OwnerLogin setIsOwnerLoginShown={setIsOwnerLoginShown} />
+      )}
     </div>
   );
 
@@ -668,7 +668,6 @@ const AppContent = () => {
         <Route path="/" element={mainUI} />
         <Route path="/parking/:id" element={<ParkingDetailsRoute />} />
         <Route path="/owner" element={<OwnerDashboardRoute />} />
-        <Route path="/ownerLogin" element={<OwnerLoginRoute />} />
       </Routes>
     </ErrorBoundary>
   );
