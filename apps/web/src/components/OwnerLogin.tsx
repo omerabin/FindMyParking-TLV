@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from './ui/button';
 import { ChevronRight } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 type FormType = 'login' | 'register';
 
@@ -15,6 +16,7 @@ const OwnerLogin: React.FC<OwnerLoginProps> = ({ setIsOwnerLoginShown }) => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const navigate = useNavigate();
+  const { t } = useLanguage();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -37,9 +39,7 @@ const OwnerLogin: React.FC<OwnerLoginProps> = ({ setIsOwnerLoginShown }) => {
         </Button>
 
         <h2 className="text-2xl font-bold text-center mb-6 text-gray-900 dark:text-white">
-          {formType === 'login'
-            ? 'Login as lot owner'
-            : 'Register as lot owner'}
+          {formType === 'login' ? t('loginTitle') : t('signupTitle')}
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -49,7 +49,7 @@ const OwnerLogin: React.FC<OwnerLoginProps> = ({ setIsOwnerLoginShown }) => {
               htmlFor="email"
               className="block mb-1 font-medium w-full max-w-xs text-center sm:text-left text-gray-700 dark:text-gray-200"
             >
-              Email
+              {t('email')}
             </label>
             <input
               id="email"
@@ -66,7 +66,7 @@ const OwnerLogin: React.FC<OwnerLoginProps> = ({ setIsOwnerLoginShown }) => {
               htmlFor="password"
               className="block mb-1 font-medium w-full max-w-xs text-center sm:text-left text-gray-700 dark:text-gray-200"
             >
-              Password
+              {t('password')}
             </label>
             <input
               id="password"
@@ -84,7 +84,7 @@ const OwnerLogin: React.FC<OwnerLoginProps> = ({ setIsOwnerLoginShown }) => {
                 htmlFor="confirmPassword"
                 className="block mb-1 font-medium w-full max-w-xs text-center sm:text-left text-gray-700 dark:text-gray-200"
               >
-                Confirm Password
+                {t('confirmPassword')}
               </label>
               <input
                 id="confirmPassword"
@@ -101,22 +101,20 @@ const OwnerLogin: React.FC<OwnerLoginProps> = ({ setIsOwnerLoginShown }) => {
             type="submit"
             className="w-full max-w-xs bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition-colors cursor-pointer"
           >
-            {formType === 'login' ? 'Login' : 'Register'}
+            {formType === 'login' ? t('login') : t('signup')}
           </button>
         </form>
 
         {/* Toggle Form Type */}
         <p className="text-center mt-4 text-gray-600 dark:text-gray-400 text-sm sm:text-base">
-          {formType === 'login'
-            ? "Don't have an account?"
-            : 'Already have an account?'}{' '}
+          {formType === 'login' ? t('noAccountYet') : t('haveAccount')}{' '}
           <button
             onClick={() =>
               setFormType(formType === 'login' ? 'register' : 'login')
             }
             className="text-blue-600 hover:underline cursor-pointer"
           >
-            {formType === 'login' ? 'Register' : 'Login'}
+            {formType === 'login' ? t('signup') : t('login')}
           </button>
         </p>
       </div>

@@ -1,4 +1,5 @@
 import { OwnerDashboard } from '@/components/OwnerDashboard';
+import { log } from 'console';
 import {
   createContext,
   useContext,
@@ -26,9 +27,16 @@ const translations: Translations = {
   map: { he: 'מפה', en: 'Map' },
   list: { he: 'רשימה', en: 'List' },
   profile: { he: 'פרופיל', en: 'Profile' },
+  loginTitle: { he: 'התחברות כבעל חניון', en: 'Login as lot owner' },
+  signupTitle: { he: 'הרשמה כבעל חניון', en: 'Sign Up as lot owner' },
   login: { he: 'התחבר', en: 'Login' },
-  signup: { he: 'הרשם', en: 'Sign Up' },
+  signup: { he: 'הירשם', en: 'Sign Up' },
   logout: { he: 'התנתק', en: 'Logout' },
+  noAccountYet: {
+    he: 'אין לך חשבון?',
+    en: `Don't have an account?`,
+  },
+  haveAccount: { he: 'כבר יש לך חשבון?', en: 'Already have an account?' },
 
   // Search & Filters
   searchPlaceholder: {
