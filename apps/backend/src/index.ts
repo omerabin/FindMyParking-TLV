@@ -1,5 +1,8 @@
 import express, { Request, Response } from 'express';
 import { appConfig } from './config/appConfig';
+import { getPrivateParkingsFromAPI } from './services/privateParkings';
+import { getPublicParkingsFromAPI } from './services/publicParkings';
+import { getAhuzotHofParkingsFromAPI } from './services/ahuzotHofParkings';
 
 const app = express();
 const port = appConfig.PORT;

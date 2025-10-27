@@ -1,0 +1,6096 @@
+{
+  "displayFieldName": "name",
+  "fieldAliases": {
+    "oid": "מזהה ממג",
+    "address": "כתובת",
+    "lot_num": "מסד",
+    "ms_rishui": "תיק רישוי",
+    "name": "שם חניון",
+    "rishui_address": "כתובת העסק",
+    "description": "תיאור",
+    "num_vehicles": "כמות רכבים מקורית",
+    "num_disabled": "מספר חניות נכים",
+    "expiry_date": "תאריך תפוגת רשיון",
+    "lot_area": "שטח המגרש",
+    "license_date": "תאריך בקשת רשיון",
+    "achuzot": "אחוזות החוף",
+    "covered": "מקורה",
+    "UniqueId": "מזהה מערכת",
+    "date_import": "תאריך טעינה"
+  },
+  "geometryType": "esriGeometryPoint",
+  "spatialReference": {
+    "wkid": 2039,
+    "latestWkid": 2039
+  },
+  "fields": [
+    {
+      "name": "oid",
+      "type": "esriFieldTypeOID",
+      "alias": "מזהה ממג"
+    },
+    {
+      "name": "address",
+      "type": "esriFieldTypeString",
+      "alias": "כתובת",
+      "length": 255
+    },
+    {
+      "name": "lot_num",
+      "type": "esriFieldTypeDouble",
+      "alias": "מסד"
+    },
+    {
+      "name": "ms_rishui",
+      "type": "esriFieldTypeDouble",
+      "alias": "תיק רישוי"
+    },
+    {
+      "name": "name",
+      "type": "esriFieldTypeString",
+      "alias": "שם חניון",
+      "length": 255
+    },
+    {
+      "name": "rishui_address",
+      "type": "esriFieldTypeString",
+      "alias": "כתובת העסק",
+      "length": 255
+    },
+    {
+      "name": "description",
+      "type": "esriFieldTypeString",
+      "alias": "תיאור",
+      "length": 255
+    },
+    {
+      "name": "num_vehicles",
+      "type": "esriFieldTypeDouble",
+      "alias": "כמות רכבים מקורית"
+    },
+    {
+      "name": "num_disabled",
+      "type": "esriFieldTypeDouble",
+      "alias": "מספר חניות נכים"
+    },
+    {
+      "name": "expiry_date",
+      "type": "esriFieldTypeString",
+      "alias": "תאריך תפוגת רשיון",
+      "length": 255
+    },
+    {
+      "name": "lot_area",
+      "type": "esriFieldTypeDouble",
+      "alias": "שטח המגרש"
+    },
+    {
+      "name": "license_date",
+      "type": "esriFieldTypeString",
+      "alias": "תאריך בקשת רשיון",
+      "length": 255
+    },
+    {
+      "name": "achuzot",
+      "type": "esriFieldTypeString",
+      "alias": "אחוזות החוף",
+      "length": 255
+    },
+    {
+      "name": "covered",
+      "type": "esriFieldTypeString",
+      "alias": "מקורה",
+      "length": 255
+    },
+    {
+      "name": "UniqueId",
+      "type": "esriFieldTypeString",
+      "alias": "מזהה מערכת",
+      "length": 255
+    },
+    {
+      "name": "date_import",
+      "type": "esriFieldTypeString",
+      "alias": "תאריך טעינה",
+      "length": 255
+    }
+  ],
+  "features": [
+    {
+      "attributes": {
+        "oid": 1,
+        "address": "1244 2 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 660,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179661.1975,
+        "y": 663400.4837
+      }
+    },
+    {
+      "attributes": {
+        "oid": 2,
+        "address": "1244 25 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון חכמי דוד",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 631,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179799.77370000002,
+        "y": 663411.9199
+      }
+    },
+    {
+      "attributes": {
+        "oid": 3,
+        "address": "2184 4 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "עתידים חב' לתעשיות עתירות",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 23130,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 185342.0097,
+        "y": 669035.7088
+      }
+    },
+    {
+      "attributes": {
+        "oid": 4,
+        "address": "2184 8 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון כלל",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 29296.79,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 185356.9814,
+        "y": 669194.3456
+      }
+    },
+    {
+      "attributes": {
+        "oid": 6,
+        "address": "3426 9 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון בית מרס-סנטרל פארק",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 39,
+        "num_disabled": 3,
+        "expiry_date": null,
+        "lot_area": 1395.31,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178260.68060000002,
+        "y": 661952.9141
+      }
+    },
+    {
+      "attributes": {
+        "oid": 7,
+        "address": "3429 1 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון הזיתים",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 3234,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 177942.78490000003,
+        "y": 662163.7897
+      }
+    },
+    {
+      "attributes": {
+        "oid": 9,
+        "address": "אבן גבירול 124 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מגדל המאה בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 447,
+        "num_disabled": 12,
+        "expiry_date": null,
+        "lot_area": 12973,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179605.273,
+        "y": 666050.4784
+      }
+    },
+    {
+      "attributes": {
+        "oid": 10,
+        "address": "אבן גבירול 30 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון לונדון מינסטור",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 10200,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179575.4754,
+        "y": 664733.1909
+      }
+    },
+    {
+      "attributes": {
+        "oid": 11,
+        "address": "אבן גבירול 31 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון בית אליהו",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 4715,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179521.9167,
+        "y": 664727.4125
+      }
+    },
+    {
+      "attributes": {
+        "oid": 12,
+        "address": "אבן גבירול 71 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון גן העיר",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 27379,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179485.103,
+        "y": 665523.9873
+      }
+    },
+    {
+      "attributes": {
+        "oid": 16,
+        "address": "אוניברסיטת ת\"א 496 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון הנדסה",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 163,
+        "num_disabled": 3,
+        "expiry_date": null,
+        "lot_area": 4531.81,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 181676.62329999998,
+        "y": 668378.4292
+      }
+    },
+    {
+      "attributes": {
+        "oid": 17,
+        "address": "אוסישקין 7 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון בני דן",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 1425,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179158.2208,
+        "y": 667045.9469
+      }
+    },
+    {
+      "attributes": {
+        "oid": 18,
+        "address": "אחד העם 9 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון בית הרכב",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 15989,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178400.68050000002,
+        "y": 663473.3491
+      }
+    },
+    {
+      "attributes": {
+        "oid": 19,
+        "address": "אחימאיר אבא 15 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניוני שחר-אבא אחמאיר",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 3756.06,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 181431.19400000002,
+        "y": 670253.208
+      }
+    },
+    {
+      "attributes": {
+        "oid": 20,
+        "address": "אחימאיר אבא 29 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניוןן מאיה",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 137,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 3586,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 181640.92330000002,
+        "y": 670239.4514
+      }
+    },
+    {
+      "attributes": {
+        "oid": 21,
+        "address": "אידלסון 8 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון אידלסון",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 51,
+        "num_disabled": 3,
+        "expiry_date": null,
+        "lot_area": 1795.37,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178220.73340000003,
+        "y": 664579.8965
+      }
+    },
+    {
+      "attributes": {
+        "oid": 22,
+        "address": "אילת 19א",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניוני יאיר השחר",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 59,
+        "num_disabled": 3,
+        "expiry_date": null,
+        "lot_area": 1677,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 177732.3971,
+        "y": 662783.4281
+      }
+    },
+    {
+      "attributes": {
+        "oid": 23,
+        "address": "אילת 22 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניוני החוף בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 24,
+        "num_disabled": 2,
+        "expiry_date": null,
+        "lot_area": 624.86,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 177845.53129999997,
+        "y": 662805.9205
+      }
+    },
+    {
+      "attributes": {
+        "oid": 24,
+        "address": "אילת 56 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון אברבנל",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 2426,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178151.37449999998,
+        "y": 662982.3264
+      }
+    },
+    {
+      "attributes": {
+        "oid": 25,
+        "address": "אינשטיין 40 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון קניון רמת אביב",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 1569,
+        "num_disabled": 28,
+        "expiry_date": null,
+        "lot_area": 47509,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180981.75420000002,
+        "y": 668865.6304
+      }
+    },
+    {
+      "attributes": {
+        "oid": 26,
+        "address": "אינשטיין 7 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון איינשטיין 7",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 2943.94,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180072.42489999998,
+        "y": 668862.1237
+      }
+    },
+    {
+      "attributes": {
+        "oid": 27,
+        "address": "איסרליש 22 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון בית מונטיפיורי",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 4493,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180523.3895,
+        "y": 664285.4006
+      }
+    },
+    {
+      "attributes": {
+        "oid": 28,
+        "address": "אלון יגאל 1 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון הפלמ\"ח",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 3346,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180448.6126,
+        "y": 662399.4111
+      }
+    },
+    {
+      "attributes": {
+        "oid": 29,
+        "address": "אלון יגאל 120 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון בית קליפורניה",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 6408,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180838.07809999998,
+        "y": 664577.6241
+      }
+    },
+    {
+      "attributes": {
+        "oid": 30,
+        "address": "אלון יגאל 126 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 7121,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180861.298,
+        "y": 664650.3923
+      }
+    },
+    {
+      "attributes": {
+        "oid": 31,
+        "address": "אלון יגאל 141 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון עמק ברכה",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 792,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180920.5944,
+        "y": 664937.6007
+      }
+    },
+    {
+      "attributes": {
+        "oid": 33,
+        "address": "אלון יגאל 57 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "אשדר",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 646,
+        "num_disabled": 11,
+        "expiry_date": null,
+        "lot_area": 22757.77,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180499.21999999997,
+        "y": 663409.2227
+      }
+    },
+    {
+      "attributes": {
+        "oid": 34,
+        "address": "אלון יגאל 63 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "ש.ש.חניונים בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 12094,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180538.59980000003,
+        "y": 663645.0438
+      }
+    },
+    {
+      "attributes": {
+        "oid": 35,
+        "address": "אלון יגאל 94 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון אלון",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 1047,
+        "num_disabled": 7,
+        "expiry_date": null,
+        "lot_area": 38857.05,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180669.6714,
+        "y": 663980.4436
+      }
+    },
+    {
+      "attributes": {
+        "oid": 36,
+        "address": "אלון יגאל 96 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון אלקטרה",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 1516,
+        "num_disabled": 40,
+        "expiry_date": null,
+        "lot_area": 44520.28,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180683.6901,
+        "y": 664091.1716
+      }
+    },
+    {
+      "attributes": {
+        "oid": 37,
+        "address": "אלחנן יצחק 15 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מגדל נוה צדק",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 97,
+        "num_disabled": 5,
+        "expiry_date": null,
+        "lot_area": 3177.4,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178181.51040000003,
+        "y": 663602.9805
+      }
+    },
+    {
+      "attributes": {
+        "oid": 38,
+        "address": "אלחנן יצחק 7 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון יצחק אלחנן 7",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 32,
+        "num_disabled": 3,
+        "expiry_date": null,
+        "lot_area": 921.1,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178055.088,
+        "y": 663654.393
+      }
+    },
+    {
+      "attributes": {
+        "oid": 39,
+        "address": "אליפלט 4 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון אליפלט",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 27,
+        "num_disabled": 2,
+        "expiry_date": null,
+        "lot_area": 790.88,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 177968.94079999998,
+        "y": 662533.9529
+      }
+    },
+    {
+      "attributes": {
+        "oid": 40,
+        "address": "אלנבי 110 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון בית הכנסת הגדול",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 1433,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178656.74310000002,
+        "y": 663535.197
+      }
+    },
+    {
+      "attributes": {
+        "oid": 41,
+        "address": "אלנבי 115 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון אלנבי",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 4589,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178758.72389999998,
+        "y": 663321.2104
+      }
+    },
+    {
+      "attributes": {
+        "oid": 42,
+        "address": "אלנבי 25 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מוגרבי",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 1804,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178308.38319999998,
+        "y": 664504.6896
+      }
+    },
+    {
+      "attributes": {
+        "oid": 43,
+        "address": "אלעזר דוד 34 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מגדל הפלטינום",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 3400,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180134.75799999997,
+        "y": 664200.5001
+      }
+    },
+    {
+      "attributes": {
+        "oid": 45,
+        "address": "אמץ 8 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון אמץ",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 32,
+        "num_disabled": 2,
+        "expiry_date": null,
+        "lot_area": 1047,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 177691.53009999997,
+        "y": 662247.6523
+      }
+    },
+    {
+      "attributes": {
+        "oid": 46,
+        "address": "אנילביץ מרדכי 53 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון נירים",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 128,
+        "num_disabled": 5,
+        "expiry_date": null,
+        "lot_area": 3852,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180304.83270000003,
+        "y": 663470.8473
+      }
+    },
+    {
+      "attributes": {
+        "oid": 48,
+        "address": "ארלוזורוב 62 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון גוף ראשון",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 22,
+        "num_disabled": 2,
+        "expiry_date": null,
+        "lot_area": 647,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179143.0908,
+        "y": 665952.494
+      }
+    },
+    {
+      "attributes": {
+        "oid": 49,
+        "address": "ארלוזורוב 97 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "רמז ארלוזורוב",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 183,
+        "num_disabled": 8,
+        "expiry_date": null,
+        "lot_area": 5158,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179900.91460000002,
+        "y": 665820.776
+      }
+    },
+    {
+      "attributes": {
+        "oid": 50,
+        "address": "ארניה אוסוולדו 23 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מגדל המילניום",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 2707,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179983.95890000003,
+        "y": 664227.5941
+      }
+    },
+    {
+      "attributes": {
+        "oid": 51,
+        "address": "ארניה אוסוולדו 32 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניוני תל אביב בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 22855.66,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179948.9157,
+        "y": 664175.8323
+      }
+    },
+    {
+      "attributes": {
+        "oid": 54,
+        "address": "בגין מנחם 121 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון- דרך מנחם בגין 121",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 1508,
+        "num_disabled": 17,
+        "expiry_date": null,
+        "lot_area": 33474.41,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180229.3024,
+        "y": 664382.3395
+      }
+    },
+    {
+      "attributes": {
+        "oid": 55,
+        "address": "בגין מנחם 125 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מגדל היובל",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 54816.6,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180269.16710000002,
+        "y": 664473.007
+      }
+    },
+    {
+      "attributes": {
+        "oid": 56,
+        "address": "בגין מנחם 132 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון \"מרכז עזריאלי\"",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 118015,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180426.38439999998,
+        "y": 664585.181
+      }
+    },
+    {
+      "attributes": {
+        "oid": 57,
+        "address": "בגין מנחם 144 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 438,
+        "num_disabled": 9,
+        "expiry_date": null,
+        "lot_area": 3688.63,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180655.7892,
+        "y": 665021.4425
+      }
+    },
+    {
+      "attributes": {
+        "oid": 58,
+        "address": "בגין מנחם 146 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון עזריאלי טאון",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 1461,
+        "num_disabled": 21,
+        "expiry_date": null,
+        "lot_area": 46894.01,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180698.90980000002,
+        "y": 665076.1701
+      }
+    },
+    {
+      "attributes": {
+        "oid": 59,
+        "address": "בגין מנחם 148 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון עזיראלי טאון e",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 6989,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180764.1041,
+        "y": 665125.8238
+      }
+    },
+    {
+      "attributes": {
+        "oid": 60,
+        "address": "בגין מנחם 154 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "מקדן חניון קרדן בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 326,
+        "num_disabled": 9,
+        "expiry_date": null,
+        "lot_area": 8847.35,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180847.6387,
+        "y": 665194.371
+      }
+    },
+    {
+      "attributes": {
+        "oid": 61,
+        "address": "בגין מנחם 23 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מגדל לוינשטין",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 378,
+        "num_disabled": 20,
+        "expiry_date": null,
+        "lot_area": 10300,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179379.75809999998,
+        "y": 663476.4387
+      }
+    },
+    {
+      "attributes": {
+        "oid": 62,
+        "address": "בגין מנחם 24 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון בגין 24",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 3895,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179136.7229,
+        "y": 663162.0193
+      }
+    },
+    {
+      "attributes": {
+        "oid": 63,
+        "address": "בגין מנחם 24 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מנחם בגין",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 3707.34,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179136.7229,
+        "y": 663162.0193
+      }
+    },
+    {
+      "attributes": {
+        "oid": 64,
+        "address": "בגין מנחם 37 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון בית רובישנטיין",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 20978,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179599.5941,
+        "y": 663621.2892
+      }
+    },
+    {
+      "attributes": {
+        "oid": 65,
+        "address": "בגין מנחם 48 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מגדלי העיר",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 5285,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179424.81060000003,
+        "y": 663370.4704
+      }
+    },
+    {
+      "attributes": {
+        "oid": 66,
+        "address": "בגין מנחם 74 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון רח' המלאכה",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 7895,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179816.03999999998,
+        "y": 663770.1496
+      }
+    },
+    {
+      "attributes": {
+        "oid": 67,
+        "address": "בגין מנחם 86 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון בית לאו גולדברג",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 4116,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179958.10379999998,
+        "y": 663915.3106
+      }
+    },
+    {
+      "attributes": {
+        "oid": 68,
+        "address": "בגין מנחם 97 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מגדל החשמונאים",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 4475,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180026.2061,
+        "y": 664054.7712
+      }
+    },
+    {
+      "attributes": {
+        "oid": 69,
+        "address": "בוקסנבאום יוסף 1 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון שמי בר",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 25725,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180718.5933,
+        "y": 663771.6693
+      }
+    },
+    {
+      "attributes": {
+        "oid": 70,
+        "address": "בית עובד 10 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון אהרון חניונים",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 1308,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180081.36349999998,
+        "y": 663483.6845
+      }
+    },
+    {
+      "attributes": {
+        "oid": 71,
+        "address": "בית עובד 15 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "רשת חניוני M.M.N.",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 6173,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180127.3372,
+        "y": 663504.4656
+      }
+    },
+    {
+      "attributes": {
+        "oid": 72,
+        "address": "בית עובד 9 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניוני הדרך",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 115,
+        "num_disabled": 5,
+        "expiry_date": null,
+        "lot_area": 3010,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180066.6605,
+        "y": 663527.6546
+      }
+    },
+    {
+      "attributes": {
+        "oid": 73,
+        "address": "בלפור 7 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון  בלפור",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 562,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178598.65610000002,
+        "y": 663991.5305
+      }
+    },
+    {
+      "attributes": {
+        "oid": 74,
+        "address": "בלפור 8 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון רובע לב העיר",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 21300,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178617.00429999997,
+        "y": 663904.6281
+      }
+    },
+    {
+      "attributes": {
+        "oid": 75,
+        "address": "בן יהודה 32 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון בית אלעל",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 20,
+        "num_disabled": 3,
+        "expiry_date": null,
+        "lot_area": 897.6,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178284.7866,
+        "y": 664869.0675
+      }
+    },
+    {
+      "attributes": {
+        "oid": 76,
+        "address": "בן יהודה 91 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מלון דבורה",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 634.52,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178564.3384,
+        "y": 665604.4911
+      }
+    },
+    {
+      "attributes": {
+        "oid": 77,
+        "address": "בן עזריה אלעזר 8 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניוני החוף בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 22,
+        "num_disabled": 2,
+        "expiry_date": null,
+        "lot_area": 624.95,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 177257.7143,
+        "y": 662375.1904
+      }
+    },
+    {
+      "attributes": {
+        "oid": 78,
+        "address": "בן צבי 2 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון בית דחף",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 3680,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 177422.76429999998,
+        "y": 662000.2467
+      }
+    },
+    {
+      "attributes": {
+        "oid": 79,
+        "address": "בן צבי 84 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "פ.פ.א. נדל''ן 2007 בע''מ",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 340,
+        "num_disabled": 8,
+        "expiry_date": null,
+        "lot_area": 11454.93,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178594.51919999998,
+        "y": 661050.3505
+      }
+    },
+    {
+      "attributes": {
+        "oid": 80,
+        "address": "בן שמן 11 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "א.י ניהול נעסים",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 674,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180730.7217,
+        "y": 664614.9587
+      }
+    },
+    {
+      "attributes": {
+        "oid": 81,
+        "address": "בקר אהרון 8 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "גזית גלוב בע''מ",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 181,
+        "num_disabled": 5,
+        "expiry_date": null,
+        "lot_area": 5464,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 182848.2477,
+        "y": 670010.4752
+      }
+    },
+    {
+      "attributes": {
+        "oid": 82,
+        "address": "ברקוביץ 4 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מגדל המוזאון",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 20213,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180048.5306,
+        "y": 665102.618
+      }
+    },
+    {
+      "attributes": {
+        "oid": 86,
+        "address": "גולדמן נחום 6 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניוני הדרך בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 113,
+        "num_disabled": 5,
+        "expiry_date": null,
+        "lot_area": 3660.53,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 177203.29489999998,
+        "y": 662677.8197
+      }
+    },
+    {
+      "attributes": {
+        "oid": 87,
+        "address": "גרוזנברג 1 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניוני החוף",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 19,
+        "num_disabled": 2,
+        "expiry_date": null,
+        "lot_area": 550.35,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178248.5,
+        "y": 663565.7823
+      }
+    },
+    {
+      "attributes": {
+        "oid": 88,
+        "address": "גרוזנברג 16 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון גרוזנברג",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 12872,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178424.6274,
+        "y": 663721.7628
+      }
+    },
+    {
+      "attributes": {
+        "oid": 89,
+        "address": "גרוזנברג 2 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניוני החוף בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 19,
+        "num_disabled": 2,
+        "expiry_date": null,
+        "lot_area": 648.36,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178278.65399999998,
+        "y": 663561.6683
+      }
+    },
+    {
+      "attributes": {
+        "oid": 90,
+        "address": "גרשון שץ גגה 43 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "שטיפות אונליין בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 975,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180510.87209999998,
+        "y": 664011.9881
+      }
+    },
+    {
+      "attributes": {
+        "oid": 91,
+        "address": "דבורה הנביאה 121 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "פארק עתידים",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 831,
+        "num_disabled": 20,
+        "expiry_date": null,
+        "lot_area": 5762.84,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 185466.51140000002,
+        "y": 668927.5047
+      }
+    },
+    {
+      "attributes": {
+        "oid": 92,
+        "address": "דבורה הנביאה 122 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "רונימור מגדל ויתניה בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 33817.03,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 185156.3887,
+        "y": 669028.3487
+      }
+    },
+    {
+      "attributes": {
+        "oid": 93,
+        "address": "דבורה הנביאה 126 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "רמי לוי רמת החייל - חניון",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 121,
+        "num_disabled": 7,
+        "expiry_date": null,
+        "lot_area": 4502.16,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 185270.75939999998,
+        "y": 668939.139
+      }
+    },
+    {
+      "attributes": {
+        "oid": 95,
+        "address": "דה וינצ'י לאונרדו 6א",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון לאונרדו",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 34,
+        "num_disabled": 3,
+        "expiry_date": null,
+        "lot_area": 1160.03,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179859.06809999997,
+        "y": 664454.6318
+      }
+    },
+    {
+      "attributes": {
+        "oid": 96,
+        "address": "דובנוב 2 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון סוכנות",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 1244,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179748.1971,
+        "y": 664570.835
+      }
+    },
+    {
+      "attributes": {
+        "oid": 97,
+        "address": "דובנוב 3 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון דובנוב 3",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 108,
+        "num_disabled": 4,
+        "expiry_date": null,
+        "lot_area": 2672.44,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179698.26280000003,
+        "y": 664622.9274
+      }
+    },
+    {
+      "attributes": {
+        "oid": 99,
+        "address": "דובנוב 7 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניוני מאיה",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 61,
+        "num_disabled": 3,
+        "expiry_date": null,
+        "lot_area": 1477.78,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179680.79940000002,
+        "y": 664720.8027
+      }
+    },
+    {
+      "attributes": {
+        "oid": 100,
+        "address": "דיזנגוף 221א",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון דיזנגוף",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 49,
+        "num_disabled": 3,
+        "expiry_date": null,
+        "lot_area": 1333.94,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178962.5328,
+        "y": 666379.3715
+      }
+    },
+    {
+      "attributes": {
+        "oid": 101,
+        "address": "דיזנגוף 61 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון דיזנגוף סנטר",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 21115,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178861.4155,
+        "y": 664777.9284
+      }
+    },
+    {
+      "attributes": {
+        "oid": 102,
+        "address": "דיזנגוף 64 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון על בסנטר בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 10748,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178917.62680000003,
+        "y": 664809.6417
+      }
+    },
+    {
+      "attributes": {
+        "oid": 103,
+        "address": "דניאל 24 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון שוק הכרמל",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 323,
+        "num_disabled": 8,
+        "expiry_date": null,
+        "lot_area": 6828.53,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178024.9569,
+        "y": 663873.0847
+      }
+    },
+    {
+      "attributes": {
+        "oid": 104,
+        "address": "דניאל 8 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניוני הדרך",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 1975,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 177873.7699,
+        "y": 663998.4547
+      }
+    },
+    {
+      "attributes": {
+        "oid": 105,
+        "address": "הארבעה 19 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון התיכון",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 12878,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180030.227,
+        "y": 664215.4386
+      }
+    },
+    {
+      "attributes": {
+        "oid": 106,
+        "address": "הארבעה 28 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מגדלי הארבעה שותפות",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 24968.65,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180000.7696,
+        "y": 664179.6235
+      }
+    },
+    {
+      "attributes": {
+        "oid": 108,
+        "address": "הארד 6 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון אונדליין",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 7087.5,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 185116.09970000002,
+        "y": 668762.0421
+      }
+    },
+    {
+      "attributes": {
+        "oid": 109,
+        "address": "הברזל 1 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "מקאן מל אביב בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 854.26,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 184588.71519999998,
+        "y": 668206.9024
+      }
+    },
+    {
+      "attributes": {
+        "oid": 110,
+        "address": "הברזל 13 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניוני מאיה",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 40,
+        "num_disabled": 3,
+        "expiry_date": null,
+        "lot_area": 1277.09,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 184795.9488,
+        "y": 668319.97
+      }
+    },
+    {
+      "attributes": {
+        "oid": 111,
+        "address": "הברזל 15 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון הברזל -15",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 6202,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 184813.8826,
+        "y": 668347.8538
+      }
+    },
+    {
+      "attributes": {
+        "oid": 112,
+        "address": "הברזל 2 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חנין מאיה",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 1996.56,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 184648.9525,
+        "y": 668184.7395
+      }
+    },
+    {
+      "attributes": {
+        "oid": 113,
+        "address": "הברזל 20 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון אסותא רמת החייל",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 14168,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 184952.39510000002,
+        "y": 668362.3536
+      }
+    },
+    {
+      "attributes": {
+        "oid": 115,
+        "address": "הברזל 27 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מגדלי אור",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 4597,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 185094.02169999998,
+        "y": 668544.514
+      }
+    },
+    {
+      "attributes": {
+        "oid": 116,
+        "address": "הברזל 28 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניוני נכסי אריאל",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 7314.22,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 185142.35239999997,
+        "y": 668518.4021
+      }
+    },
+    {
+      "attributes": {
+        "oid": 117,
+        "address": "הברזל 31 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון -הברזל 31",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 1539,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 185165.58000000002,
+        "y": 668605.1525
+      }
+    },
+    {
+      "attributes": {
+        "oid": 118,
+        "address": "הברזל 6 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "נכסי אריאל-עוגן רמת החיל,",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 15371,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 184724.702,
+        "y": 668227.396
+      }
+    },
+    {
+      "attributes": {
+        "oid": 119,
+        "address": "הגדוד העברי 30 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון הגדוד העברי 30",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 697.5,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179085.01380000002,
+        "y": 662981.5804
+      }
+    },
+    {
+      "attributes": {
+        "oid": 120,
+        "address": "הגדוד העברי 45 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון הגדוד העברי 45",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 29,
+        "num_disabled": 2,
+        "expiry_date": null,
+        "lot_area": 657.53,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179322.4544,
+        "y": 662844.9108
+      }
+    },
+    {
+      "attributes": {
+        "oid": 121,
+        "address": "ההגנה 76א",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון התקוה",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 756,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180340.95510000002,
+        "y": 662363.8945
+      }
+    },
+    {
+      "attributes": {
+        "oid": 124,
+        "address": "החשמונאים 86 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון חשמונאים",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 2000,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179691.50530000002,
+        "y": 664089.0067
+      }
+    },
+    {
+      "attributes": {
+        "oid": 125,
+        "address": "החשמונאים 88 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון החשמונאים 88 למנויי",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 28,
+        "num_disabled": 1,
+        "expiry_date": null,
+        "lot_area": 1390.82,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179719.96260000003,
+        "y": 664085.9016
+      }
+    },
+    {
+      "attributes": {
+        "oid": 126,
+        "address": "החשמונאים 94 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון קניון העיר ת\"א בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 53887.65,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179863.26770000003,
+        "y": 664004.5033
+      }
+    },
+    {
+      "attributes": {
+        "oid": 127,
+        "address": "החשמל 19 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון חשמל 2",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 602,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179033.3958,
+        "y": 663253.2494
+      }
+    },
+    {
+      "attributes": {
+        "oid": 128,
+        "address": "החשמל 9 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "אוריו חניונים בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 6674,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178900.5393,
+        "y": 663184.9129
+      }
+    },
+    {
+      "attributes": {
+        "oid": 129,
+        "address": "היסוד 10 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון היסוד",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 6128.17,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178214.22759999998,
+        "y": 662063.4845
+      }
+    },
+    {
+      "attributes": {
+        "oid": 130,
+        "address": "היסוד 5 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מרכזים",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 135,
+        "num_disabled": 5,
+        "expiry_date": null,
+        "lot_area": 7263.25,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178155.06559999997,
+        "y": 662110.0321
+      }
+    },
+    {
+      "attributes": {
+        "oid": 131,
+        "address": "הירדן 4 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מגדל האופרה",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 10091,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178043.72509999998,
+        "y": 664622.5319
+      }
+    },
+    {
+      "attributes": {
+        "oid": 132,
+        "address": "הירקון 107 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניוני בוגרשוב דינוביץ שד",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 683,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178260.6006,
+        "y": 665297.3222
+      }
+    },
+    {
+      "attributes": {
+        "oid": 133,
+        "address": "הירקון 111 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מלון יובל",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 3830,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178279.0995,
+        "y": 665354.1354
+      }
+    },
+    {
+      "attributes": {
+        "oid": 134,
+        "address": "הירקון 115 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מלון קוסמופוליטן",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 142,
+        "num_disabled": 5,
+        "expiry_date": null,
+        "lot_area": 3550,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178270.76380000002,
+        "y": 665394.0905
+      }
+    },
+    {
+      "attributes": {
+        "oid": 135,
+        "address": "הירקון 133 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "אתרים 2",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 1651,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178307.1814,
+        "y": 665574.5877
+      }
+    },
+    {
+      "attributes": {
+        "oid": 136,
+        "address": "הירקון 162 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "אולימפיה חניון",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 622,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178429.5562,
+        "y": 665789.6697
+      }
+    },
+    {
+      "attributes": {
+        "oid": 137,
+        "address": "הירקון 165 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון אתרים",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 365,
+        "num_disabled": 8,
+        "expiry_date": null,
+        "lot_area": 10020,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178442.05060000002,
+        "y": 665938.3267
+      }
+    },
+    {
+      "attributes": {
+        "oid": 138,
+        "address": "הירקון 19 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון רויאל ביץ",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 4155,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 177922.1779,
+        "y": 664198.8621
+      }
+    },
+    {
+      "attributes": {
+        "oid": 139,
+        "address": "הירקון 205 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון הילטון",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 5700,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178506.35849999997,
+        "y": 666294.3667
+      }
+    },
+    {
+      "attributes": {
+        "oid": 140,
+        "address": "הירקון 241 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון הילטון 2",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 7032,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178574.25569999998,
+        "y": 666309.2211
+      }
+    },
+    {
+      "attributes": {
+        "oid": 141,
+        "address": "הירקון 299 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון החוף",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 1147,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178821.9703,
+        "y": 666924.8593
+      }
+    },
+    {
+      "attributes": {
+        "oid": 142,
+        "address": "הירקון 63 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניוני מאיה בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 686.95,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178117.1421,
+        "y": 664809.8643
+      }
+    },
+    {
+      "attributes": {
+        "oid": 143,
+        "address": "הירקון 78 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון \"בית מגדלות\"",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 4931,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178185.1629,
+        "y": 664924.3625
+      }
+    },
+    {
+      "attributes": {
+        "oid": 144,
+        "address": "הירקון 79 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון ימית תל אביב בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 19,
+        "num_disabled": 3,
+        "expiry_date": null,
+        "lot_area": 1200.11,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178140.3569,
+        "y": 664981.4321
+      }
+    },
+    {
+      "attributes": {
+        "oid": 145,
+        "address": "הירקון 83 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון גן לונדון",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 15000,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178170.25569999998,
+        "y": 665020.2342
+      }
+    },
+    {
+      "attributes": {
+        "oid": 146,
+        "address": "הכרמל 11 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "ע.ר. פתרונות חניה ירוקים",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 39,
+        "num_disabled": 3,
+        "expiry_date": null,
+        "lot_area": 1045.25,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178271.84120000002,
+        "y": 663978.8736
+      }
+    },
+    {
+      "attributes": {
+        "oid": 147,
+        "address": "הכרמל 12 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון הכרמל 2",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 239,
+        "num_disabled": 7,
+        "expiry_date": null,
+        "lot_area": 5209,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178069.4632,
+        "y": 663741.1635
+      }
+    },
+    {
+      "attributes": {
+        "oid": 148,
+        "address": "הלוחמים 11 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניוני מאיה",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 5737,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 177570.44189999998,
+        "y": 660496.6054
+      }
+    },
+    {
+      "attributes": {
+        "oid": 150,
+        "address": "הלל הזקן 14 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניוני הדרך בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 17,
+        "num_disabled": 2,
+        "expiry_date": null,
+        "lot_area": 679.27,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178406.016,
+        "y": 664164.9644
+      }
+    },
+    {
+      "attributes": {
+        "oid": 151,
+        "address": "המלאכה 3 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון בית ויקטוריה",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 8566,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179900.6654,
+        "y": 663786.7874
+      }
+    },
+    {
+      "attributes": {
+        "oid": 152,
+        "address": "המלך ג'ורג' 35 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון בצלאל ניהול בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 348,
+        "num_disabled": 8,
+        "expiry_date": null,
+        "lot_area": 11739.13,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178833.43440000003,
+        "y": 664473.6398
+      }
+    },
+    {
+      "attributes": {
+        "oid": 153,
+        "address": "המסגר 35 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון סקיי טאואר",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 355,
+        "num_disabled": 10,
+        "expiry_date": null,
+        "lot_area": 9810.23,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179901.87199999997,
+        "y": 663550.2494
+      }
+    },
+    {
+      "attributes": {
+        "oid": 154,
+        "address": "המסגר 39 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון בית נ.י.פ",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 20047,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179960.2119,
+        "y": 663691.7435
+      }
+    },
+    {
+      "attributes": {
+        "oid": 155,
+        "address": "המסגר 6 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון המסגר 6",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 3840.19,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179822.74180000002,
+        "y": 663089.4669
+      }
+    },
+    {
+      "attributes": {
+        "oid": 156,
+        "address": "המסגר 9 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון בית אמפא",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 9160.46,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179816.76919999998,
+        "y": 663302.0705
+      }
+    },
+    {
+      "attributes": {
+        "oid": 159,
+        "address": "המרד 36 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון המרד",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 31,
+        "num_disabled": 2,
+        "expiry_date": null,
+        "lot_area": 781,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 177962.69179999997,
+        "y": 663608.8592
+      }
+    },
+    {
+      "attributes": {
+        "oid": 162,
+        "address": "הפלך 10 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון הפלך",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 309,
+        "num_disabled": 8,
+        "expiry_date": null,
+        "lot_area": 7875,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178079.70409999997,
+        "y": 661971.6113
+      }
+    },
+    {
+      "attributes": {
+        "oid": 163,
+        "address": "הצורפים 15 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון הצורפים",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 47,
+        "num_disabled": 1,
+        "expiry_date": null,
+        "lot_area": 1490.18,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 176907.9546,
+        "y": 662376.6439
+      }
+    },
+    {
+      "attributes": {
+        "oid": 164,
+        "address": "הצפירה 16 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון צפירה",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 60,
+        "num_disabled": 3,
+        "expiry_date": null,
+        "lot_area": 1779,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179730.37190000003,
+        "y": 663049.9052
+      }
+    },
+    {
+      "attributes": {
+        "oid": 167,
+        "address": "הר ציון 105 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "מוניות יהודה מזרחי בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 557,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178839.8823,
+        "y": 662039.4154
+      }
+    },
+    {
+      "attributes": {
+        "oid": 168,
+        "address": "הר ציון 52 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "מוסך אמין",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 196.25,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178883.86690000002,
+        "y": 662412.5035
+      }
+    },
+    {
+      "attributes": {
+        "oid": 169,
+        "address": "הרברט סמואל 1 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון פארק צארלס קלור",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 17900,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 177689.3238,
+        "y": 663783.6336
+      }
+    },
+    {
+      "attributes": {
+        "oid": 171,
+        "address": "הרכבת 28 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "סיטי רון אחזקות בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 4265,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179329.39640000003,
+        "y": 663312.9597
+      }
+    },
+    {
+      "attributes": {
+        "oid": 172,
+        "address": "הרכבת 58 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "מיגדל הרכבת",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 16165,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179583.0111,
+        "y": 663075.4313
+      }
+    },
+    {
+      "attributes": {
+        "oid": 173,
+        "address": "הרצל 108 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון הדרך בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 1178,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178497.2562,
+        "y": 662549.7814
+      }
+    },
+    {
+      "attributes": {
+        "oid": 174,
+        "address": "השוק 46 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון השוק",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 744,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178545.45789999998,
+        "y": 662700.2905
+      }
+    },
+    {
+      "attributes": {
+        "oid": 175,
+        "address": "השחר 2 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון האקליפטוס",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 563,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178313.6031,
+        "y": 663587.476
+      }
+    },
+    {
+      "attributes": {
+        "oid": 176,
+        "address": "השלושה 1 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון היכל מנורה",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 15185,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180179.6424,
+        "y": 663293.6796
+      }
+    },
+    {
+      "attributes": {
+        "oid": 177,
+        "address": "השלושה 2 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "אי בי סי ניהול חניונים בע",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 45329,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180163.3061,
+        "y": 663244.8391
+      }
+    },
+    {
+      "attributes": {
+        "oid": 178,
+        "address": "השרון 15 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון השרון",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 30,
+        "num_disabled": 3,
+        "expiry_date": null,
+        "lot_area": 917.42,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179236.16489999997,
+        "y": 663270.4119
+      }
+    },
+    {
+      "attributes": {
+        "oid": 179,
+        "address": "השרון 9 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון השרון",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 633.65,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179197.10489999998,
+        "y": 663171.761
+      }
+    },
+    {
+      "attributes": {
+        "oid": 180,
+        "address": "התלמי יהושע 16 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון התלמי**",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 681,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178302.45380000002,
+        "y": 663351.9853
+      }
+    },
+    {
+      "attributes": {
+        "oid": 181,
+        "address": "התלמי יהושע 9 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון בית פסגות",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 8540,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178316.18079999997,
+        "y": 663383.8669
+      }
+    },
+    {
+      "attributes": {
+        "oid": 182,
+        "address": "התנופה 4 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון בתי המשפט",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 5088,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178744.41389999999,
+        "y": 662078.7193
+      }
+    },
+    {
+      "attributes": {
+        "oid": 183,
+        "address": "התערוכה 3 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון  דניאל פרקינג",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 3719,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178981.48080000002,
+        "y": 667191.6977
+      }
+    },
+    {
+      "attributes": {
+        "oid": 184,
+        "address": "התקומה 3 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון VIP התקומה",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 61,
+        "num_disabled": 20,
+        "expiry_date": null,
+        "lot_area": 1907.37,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 177491.33880000003,
+        "y": 662139.6887
+      }
+    },
+    {
+      "attributes": {
+        "oid": 186,
+        "address": "ויצמן 14 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מרכז ויצמן, ניהול ב",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 40505,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180279.9866,
+        "y": 665408.1212
+      }
+    },
+    {
+      "attributes": {
+        "oid": 187,
+        "address": "ויצמן 30 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון בית לסין",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 35,
+        "num_disabled": 4,
+        "expiry_date": null,
+        "lot_area": 1697,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180308.5774,
+        "y": 665772.2932
+      }
+    },
+    {
+      "attributes": {
+        "oid": 188,
+        "address": "ויצמן 4 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון בית אסיה",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 9460,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180215.79719999997,
+        "y": 665068.0393
+      }
+    },
+    {
+      "attributes": {
+        "oid": 189,
+        "address": "ולנברג ראול 18 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון סי יו",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 30189.42,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 184809.39750000002,
+        "y": 668527.5147
+      }
+    },
+    {
+      "attributes": {
+        "oid": 190,
+        "address": "ולנברג ראול 2 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "מקאן תל אביב",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 5789.66,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 184565.63540000003,
+        "y": 668288.8201
+      }
+    },
+    {
+      "attributes": {
+        "oid": 191,
+        "address": "ולנברג ראול 2 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 3317,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 184565.63540000003,
+        "y": 668288.8201
+      }
+    },
+    {
+      "attributes": {
+        "oid": 192,
+        "address": "ולנברג ראול 24 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "שותפות ניהול מגדלי זיו",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 20849,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 184979.1335,
+        "y": 668732.5325
+      }
+    },
+    {
+      "attributes": {
+        "oid": 194,
+        "address": "חומה ומגדל 21 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניונים ירוקים",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 1820,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179972.3098,
+        "y": 663414.2442
+      }
+    },
+    {
+      "attributes": {
+        "oid": 195,
+        "address": "חומה ומגדל 4 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון איריס",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 1660,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179917.55690000003,
+        "y": 663211.8564
+      }
+    },
+    {
+      "attributes": {
+        "oid": 196,
+        "address": "חומה ומגדל 8 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניוני הדרך בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 792,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179943.2858,
+        "y": 663271.6384
+      }
+    },
+    {
+      "attributes": {
+        "oid": 197,
+        "address": "חכמי דוד 1 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "רמות סונול בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 17000,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179515.65500000003,
+        "y": 663454.9466
+      }
+    },
+    {
+      "attributes": {
+        "oid": 198,
+        "address": "חכמי דוד 19 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מאיה",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 1064,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179621.37809999997,
+        "y": 663432.5762
+      }
+    },
+    {
+      "attributes": {
+        "oid": 199,
+        "address": "טיומקין 16 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "סנטרל פארק בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 1066,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179303.7184,
+        "y": 663482.7261
+      }
+    },
+    {
+      "attributes": {
+        "oid": 200,
+        "address": "טרומפלדור 11 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "מ. מטרופוליטן-חניון",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 1280,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178195.2229,
+        "y": 664785.5949
+      }
+    },
+    {
+      "attributes": {
+        "oid": 201,
+        "address": "יבנה 29 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "נכסי אריאל- בית הבינלאומי",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 12926,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178831.2981,
+        "y": 663404.7556
+      }
+    },
+    {
+      "attributes": {
+        "oid": 202,
+        "address": "יבנה 31 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מגדל יבנה",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 2760,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178838.46240000002,
+        "y": 663389.7566
+      }
+    },
+    {
+      "attributes": {
+        "oid": 203,
+        "address": "יבנה 38 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מגדל מאייר",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 3199.99,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178802.81530000002,
+        "y": 663401.8751
+      }
+    },
+    {
+      "attributes": {
+        "oid": 204,
+        "address": "יד חרוצים 12 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון יד חרוצים 12.(קרסו)",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 4800,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179646.99920000002,
+        "y": 663246.8424
+      }
+    },
+    {
+      "attributes": {
+        "oid": 205,
+        "address": "יד חרוצים 14 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון שבח",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 4713,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179680.1371,
+        "y": 663244.717
+      }
+    },
+    {
+      "attributes": {
+        "oid": 206,
+        "address": "יד חרוצים 6 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "ש.ש חניונים בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 58,
+        "num_disabled": 4,
+        "expiry_date": null,
+        "lot_area": 2170.75,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179511.19309999997,
+        "y": 663292.2851
+      }
+    },
+    {
+      "attributes": {
+        "oid": 207,
+        "address": "ילין מור נתן 4 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניוני החוף",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 15,
+        "num_disabled": 2,
+        "expiry_date": null,
+        "lot_area": 502.04,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180431.3678,
+        "y": 664000.3159
+      }
+    },
+    {
+      "attributes": {
+        "oid": 208,
+        "address": "יערי מאיר 19 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון G כוכב הצפון",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 51,
+        "num_disabled": 5,
+        "expiry_date": null,
+        "lot_area": 1956.69,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180138.5513,
+        "y": 667509.5282
+      }
+    },
+    {
+      "attributes": {
+        "oid": 209,
+        "address": "יפת 36 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "THE JAFFA",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 150,
+        "num_disabled": 4,
+        "expiry_date": null,
+        "lot_area": 3168.43,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 176847.8983,
+        "y": 662243.1583
+      }
+    },
+    {
+      "attributes": {
+        "oid": 211,
+        "address": "לבונטין 22 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניוני מאיה",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 616,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179042.5491,
+        "y": 663311.0989
+      }
+    },
+    {
+      "attributes": {
+        "oid": 212,
+        "address": "לבנון חיים 6 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מוזיאון א\"י",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 199,
+        "num_disabled": 8,
+        "expiry_date": null,
+        "lot_area": 7830,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180996.0981,
+        "y": 667870.4105
+      }
+    },
+    {
+      "attributes": {
+        "oid": 213,
+        "address": "לבנון חיים 6 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מוזיאון א\"י",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 263,
+        "num_disabled": 10,
+        "expiry_date": null,
+        "lot_area": 2054.15,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 181089.95130000002,
+        "y": 667869.1755
+      }
+    },
+    {
+      "attributes": {
+        "oid": 214,
+        "address": "לוי יוסף גונדר 2 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון-מלון אינטרקונטיננטל",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 16190.9,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 177798.15769999998,
+        "y": 663692.3671
+      }
+    },
+    {
+      "attributes": {
+        "oid": 217,
+        "address": "לויד ג'ורג' 5 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון אומנויות הבמה",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 1498,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179524.81579999998,
+        "y": 663732.3633
+      }
+    },
+    {
+      "attributes": {
+        "oid": 218,
+        "address": "לוינסקי 108 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון תחנה מרכזית תל אביב",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 17722,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179326.81929999997,
+        "y": 662658.262
+      }
+    },
+    {
+      "attributes": {
+        "oid": 219,
+        "address": "לוינסקי 122 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון לוינסקי",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 1495,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179497.8431,
+        "y": 662596.7104
+      }
+    },
+    {
+      "attributes": {
+        "oid": 220,
+        "address": "לוינסקי 39 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון לוינסקי",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 3845,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178582.6277,
+        "y": 663067.417
+      }
+    },
+    {
+      "attributes": {
+        "oid": 221,
+        "address": "לוריא 8 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון הככר עפ- אר בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 15656,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178622.6949,
+        "y": 665006.4342
+      }
+    },
+    {
+      "attributes": {
+        "oid": 222,
+        "address": "לינקולן 20 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון לינקולן",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 72,
+        "num_disabled": 3,
+        "expiry_date": null,
+        "lot_area": 2019.11,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179657.34139999998,
+        "y": 663718.8705
+      }
+    },
+    {
+      "attributes": {
+        "oid": 223,
+        "address": "ליפקין שחק- שטח הנמל 7 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון נמל ת\"א",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 24427,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178787.28720000002,
+        "y": 667104.2743
+      }
+    },
+    {
+      "attributes": {
+        "oid": 224,
+        "address": "מגן קלמן אלוף 3 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון גינדי שרונה",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 13654,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180098.1336,
+        "y": 664304.9989
+      }
+    },
+    {
+      "attributes": {
+        "oid": 225,
+        "address": "מוהליבר 18 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מוהליבר 18",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 4385,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178292.72340000002,
+        "y": 663678.3813
+      }
+    },
+    {
+      "attributes": {
+        "oid": 226,
+        "address": "מוזס יהודה ונח 1 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מוזס 1",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 5208,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180582.53480000002,
+        "y": 664864.0328
+      }
+    },
+    {
+      "attributes": {
+        "oid": 227,
+        "address": "מונטיפיורי 35 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון לב ת\"א",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 3250,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178778.0771,
+        "y": 663698.3892
+      }
+    },
+    {
+      "attributes": {
+        "oid": 229,
+        "address": "מזא\"ה 39 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "סנטרל פארק-חניון מזא\"ה",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 23,
+        "num_disabled": 2,
+        "expiry_date": null,
+        "lot_area": 660,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179089.26890000002,
+        "y": 663734.0791
+      }
+    },
+    {
+      "attributes": {
+        "oid": 230,
+        "address": "מעון 23 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון פלורנטין",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 28,
+        "num_disabled": 3,
+        "expiry_date": null,
+        "lot_area": 769.43,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178028.55080000003,
+        "y": 662561.6554
+      }
+    },
+    {
+      "attributes": {
+        "oid": 231,
+        "address": "מעון 23 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "תמוז חניונים ויזמות בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 31,
+        "num_disabled": 3,
+        "expiry_date": null,
+        "lot_area": 853,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178028.55080000003,
+        "y": 662561.6554
+      }
+    },
+    {
+      "attributes": {
+        "oid": 232,
+        "address": "נחלת יצחק 18 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "מבנה תעשיה",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 355,
+        "num_disabled": 14,
+        "expiry_date": null,
+        "lot_area": 12560,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 181066.7881,
+        "y": 664608.6967
+      }
+    },
+    {
+      "attributes": {
+        "oid": 233,
+        "address": "נחלת יצחק 34 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון יאיר השחר",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 729,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 181278.7392,
+        "y": 664589.9358
+      }
+    },
+    {
+      "attributes": {
+        "oid": 234,
+        "address": "נחמיה 6 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניוני מאיה",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 53,
+        "num_disabled": 3,
+        "expiry_date": null,
+        "lot_area": 1545.46,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 177871.08880000003,
+        "y": 664070.3241
+      }
+    },
+    {
+      "attributes": {
+        "oid": 235,
+        "address": "נחמני 16 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון נחמני",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 2075,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178803.2512,
+        "y": 663724.2376
+      }
+    },
+    {
+      "attributes": {
+        "oid": 236,
+        "address": "נירים 1 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון בית רילון",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 4232,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180367.0685,
+        "y": 663299.9454
+      }
+    },
+    {
+      "attributes": {
+        "oid": 238,
+        "address": "נמל יפו 5 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון נמל יפו",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 608,
+        "num_disabled": 13,
+        "expiry_date": null,
+        "lot_area": 20900,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 176368.0968,
+        "y": 661844.9631
+      }
+    },
+    {
+      "attributes": {
+        "oid": 240,
+        "address": "נמל תל אביב 12 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון כחול לבן",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 1380,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178709.63780000003,
+        "y": 666878.4006
+      }
+    },
+    {
+      "attributes": {
+        "oid": 241,
+        "address": "נמל תל אביב 20 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון התכלת",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 2123,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178725.20539999998,
+        "y": 666941.7316
+      }
+    },
+    {
+      "attributes": {
+        "oid": 242,
+        "address": "נמל תל אביב 40 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון נמל ת\"א 40",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 646,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178835.3088,
+        "y": 667180.3035
+      }
+    },
+    {
+      "attributes": {
+        "oid": 244,
+        "address": "סעדיה גאון 24 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון אבן זיו",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 12000,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179602.1569,
+        "y": 663950.6294
+      }
+    },
+    {
+      "attributes": {
+        "oid": 245,
+        "address": "עזרא הסופר 4 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון ARM",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 1290,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 177884.98719999997,
+        "y": 664144.1219
+      }
+    },
+    {
+      "attributes": {
+        "oid": 248,
+        "address": "פריש דניאל 3 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון המיגדל",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 7500,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179686.9544,
+        "y": 664664.8889
+      }
+    },
+    {
+      "attributes": {
+        "oid": 250,
+        "address": "פרישמן 4 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון דן ת\"א",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 1765,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178238.3383,
+        "y": 665255.4948
+      }
+    },
+    {
+      "attributes": {
+        "oid": 251,
+        "address": "פרישמן 46 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון פרישמן 46",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 3635,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178853.8343,
+        "y": 665221.0857
+      }
+    },
+    {
+      "attributes": {
+        "oid": 252,
+        "address": "צ'לנוב 22 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון כיכר עליה",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 345,
+        "num_disabled": 9,
+        "expiry_date": null,
+        "lot_area": 13310.81,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178881.97240000003,
+        "y": 662790.7646
+      }
+    },
+    {
+      "attributes": {
+        "oid": 253,
+        "address": "צייטלין 1 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון בית הכהנים",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 2360,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179530.234,
+        "y": 665223.4022
+      }
+    },
+    {
+      "attributes": {
+        "oid": 254,
+        "address": "קבוץ גלויות 106 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון כלי רכב",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 1890,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179087.21240000002,
+        "y": 661712.0778
+      }
+    },
+    {
+      "attributes": {
+        "oid": 255,
+        "address": "קהילת סלוניקי 3 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניוני דן אל",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 3150,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 183534.89860000001,
+        "y": 669038.9353
+      }
+    },
+    {
+      "attributes": {
+        "oid": 256,
+        "address": "קהילת פאדובה 32 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "כיתן",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 60,
+        "num_disabled": 3,
+        "expiry_date": null,
+        "lot_area": 1823.9,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 183555.5061,
+        "y": 669101.7386
+      }
+    },
+    {
+      "attributes": {
+        "oid": 257,
+        "address": "קויפמן יחזקאל 10 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון דן פנורמה",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 187,
+        "num_disabled": 13,
+        "expiry_date": null,
+        "lot_area": 6106.39,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 177759.51419999998,
+        "y": 663594.7179
+      }
+    },
+    {
+      "attributes": {
+        "oid": 258,
+        "address": "קויפמן יחזקאל 2 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון אילת 2",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 71,
+        "num_disabled": 3,
+        "expiry_date": null,
+        "lot_area": 2038.35,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 177677.1421,
+        "y": 663403.4328
+      }
+    },
+    {
+      "attributes": {
+        "oid": 259,
+        "address": "קויפמן יחזקאל 6 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "נדב מאיר חניון רכב",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 105,
+        "num_disabled": 4,
+        "expiry_date": null,
+        "lot_area": 2750,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 177722.582,
+        "y": 663500.0559
+      }
+    },
+    {
+      "attributes": {
+        "oid": 263,
+        "address": "קרליבך 37 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "ע.ר. פתרונות חניה ירוקים",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 17,
+        "num_disabled": 2,
+        "expiry_date": null,
+        "lot_area": 706.22,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179619.0917,
+        "y": 664152.1656
+      }
+    },
+    {
+      "attributes": {
+        "oid": 264,
+        "address": "קרמניצקי 3 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון קרמניצקי",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 10369.72,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180740.01380000002,
+        "y": 663817.4972
+      }
+    },
+    {
+      "attributes": {
+        "oid": 265,
+        "address": "קרמניצקי 6 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון קידמת אילון",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 2672,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180732.6726,
+        "y": 663786.5862
+      }
+    },
+    {
+      "attributes": {
+        "oid": 266,
+        "address": "רבי פנחס 4 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון הפשפשים",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 3600,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 176957.3529,
+        "y": 662298.5913
+      }
+    },
+    {
+      "attributes": {
+        "oid": 269,
+        "address": "רוזן פנחס 72 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון טופ דן",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 11267,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 183724.48690000002,
+        "y": 669087.1712
+      }
+    },
+    {
+      "attributes": {
+        "oid": 270,
+        "address": "רוזנבלום הרצל ד\"ר 12 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מלון ווסט",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 58,
+        "num_disabled": 2,
+        "expiry_date": null,
+        "lot_area": 1727.8,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180495.6374,
+        "y": 671794.7296
+      }
+    },
+    {
+      "attributes": {
+        "oid": 271,
+        "address": "רוזנבלום הרצל ד\"ר 9 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון סי אנד סאן",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 2000,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180530.99690000003,
+        "y": 671714.7508
+      }
+    },
+    {
+      "attributes": {
+        "oid": 272,
+        "address": "רוטשילד 1 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "קצה השדרה",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 389,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 14450,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178331.93569999997,
+        "y": 663391.7876
+      }
+    },
+    {
+      "attributes": {
+        "oid": 273,
+        "address": "רוטשילד 20 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 2929,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178555.7942,
+        "y": 663369.9282
+      }
+    },
+    {
+      "attributes": {
+        "oid": 274,
+        "address": "רוטשילד 28 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "אם .אנד.די ריל אסטייט בע\"",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 1427,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178644.24949999998,
+        "y": 663386.5402
+      }
+    },
+    {
+      "attributes": {
+        "oid": 275,
+        "address": "רוטשילד 41 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון בית ציון",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 8629,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178842.776,
+        "y": 663512.4973
+      }
+    },
+    {
+      "attributes": {
+        "oid": 276,
+        "address": "רוטשילד 46 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מגדל אלרוב",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 9892,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178880.8491,
+        "y": 663469.4303
+      }
+    },
+    {
+      "attributes": {
+        "oid": 277,
+        "address": "רוטשילד 58 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון גיא",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 2150,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178994.94559999998,
+        "y": 663522.8704
+      }
+    },
+    {
+      "attributes": {
+        "oid": 278,
+        "address": "רוקח ישראל 101א",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון פנימי מרכז ירידים",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 28977,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 182529.9938,
+        "y": 668206.1807
+      }
+    },
+    {
+      "attributes": {
+        "oid": 283,
+        "address": "רוקח ישראל 80 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "גולפיטק",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 8099,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 181436.79969999997,
+        "y": 667548.5095
+      }
+    },
+    {
+      "attributes": {
+        "oid": 284,
+        "address": "ריב\"ל 34 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון ריב\"ל 34",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 2960.86,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179946.1288,
+        "y": 663237.6944
+      }
+    },
+    {
+      "attributes": {
+        "oid": 285,
+        "address": "רמב\"ם 12 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "פתרונות חניה ירוקים",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 21,
+        "num_disabled": 2,
+        "expiry_date": null,
+        "lot_area": 627,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178387.1644,
+        "y": 663915.5321
+      }
+    },
+    {
+      "attributes": {
+        "oid": 286,
+        "address": "רמבה אייזיק 5 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון דרייב אין",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 32735,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 182064.7805,
+        "y": 668295.2213
+      }
+    },
+    {
+      "attributes": {
+        "oid": 287,
+        "address": "שארית ישראל 19 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון האמץ",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 3295,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 177650.3883,
+        "y": 662267.7815
+      }
+    },
+    {
+      "attributes": {
+        "oid": 288,
+        "address": "שדה יצחק 4 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "רמות בנייני רובינשטיין",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 762,
+        "num_disabled": 18,
+        "expiry_date": null,
+        "lot_area": 24240.82,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 179813.01299999998,
+        "y": 663647.4036
+      }
+    },
+    {
+      "attributes": {
+        "oid": 290,
+        "address": "שונצינו 23 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון ליטל",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 1630,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180132.8213,
+        "y": 663934.5955
+      }
+    },
+    {
+      "attributes": {
+        "oid": 292,
+        "address": "שלמה 2 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון חצרות יפו",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 8800,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 177486.36469999998,
+        "y": 662480.0381
+      }
+    },
+    {
+      "attributes": {
+        "oid": 293,
+        "address": "שלמה 32 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניוני הדרך בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 1972,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 177885.2552,
+        "y": 662438.4827
+      }
+    },
+    {
+      "attributes": {
+        "oid": 294,
+        "address": "שמרלינג 2 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון מעל 500 מ\"ר (בשטח פתוח).",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 1737,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 177687.9325,
+        "y": 663236.717
+      }
+    },
+    {
+      "attributes": {
+        "oid": 295,
+        "address": "שנקר אריה 3 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון שרבט סהר",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 7590,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 177758.5466,
+        "y": 663358.188
+      }
+    },
+    {
+      "attributes": {
+        "oid": 296,
+        "address": "שנקר אריה 3 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מגדל הסחר הבינלאומי",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 13399,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 177758.5466,
+        "y": 663358.188
+      }
+    },
+    {
+      "attributes": {
+        "oid": 297,
+        "address": "תובל 5 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "בית צרפת (דלדר) בע\"מ",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 0,
+        "num_disabled": 0,
+        "expiry_date": null,
+        "lot_area": 10341,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180790.69799999997,
+        "y": 664184.5798
+      }
+    },
+    {
+      "attributes": {
+        "oid": 298,
+        "address": "תוצרת הארץ 6 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון מגדל תוהא",
+        "rishui_address": null,
+        "description": "8.6 ז - חניון מקורה או תת קרקעי, ששטחו מעל 500 מ\"ר שהוא בתשלום או  פתוח לקהל הרחב, למעט חניון המשמש את עובדי או דיירי הבניין בלבד.",
+        "num_vehicles": 950,
+        "num_disabled": 18,
+        "expiry_date": null,
+        "lot_area": 23794.17,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 180894.77510000003,
+        "y": 664514.5334
+      }
+    },
+    {
+      "attributes": {
+        "oid": 299,
+        "address": "תל גבורים 5 ",
+        "lot_num": null,
+        "ms_rishui": null,
+        "name": "חניון בית טפר",
+        "rishui_address": null,
+        "description": "8.6 ב - חניון בתשלום או חניון המשמש באי מרכז מסחרי הסמוך לו, ששטחם מעל 500 מ\"ר, למעט חניון כמפורט בסעיף 8.6ז'",
+        "num_vehicles": 92,
+        "num_disabled": 4,
+        "expiry_date": null,
+        "lot_area": 2885.58,
+        "license_date": null,
+        "achuzot": null,
+        "covered": null,
+        "UniqueId": null,
+        "date_import": "29/01/2025 01:21:58"
+      },
+      "geometry": {
+        "x": 178437.3799,
+        "y": 660976.129
+      }
+    }
+  ]
+}
