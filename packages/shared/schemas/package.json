@@ -1,0 +1,17 @@
+{
+  "name": "@shared/schemas",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "private": true,
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "typescript": "^5.x",
+    "zod": "^3.x"
+  }
+}

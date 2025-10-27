@@ -1,6 +1,7 @@
 {
   "name": "findmyparking-tlv",
   "private": true,
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "build": "turbo run build",
@@ -33,7 +34,6 @@
     "packages/*"
   ],
   "description": "This Turborepo starter is maintained by the Turborepo core team.",
-  "version": "1.0.0",
   "main": "index.js",
   "keywords": [],
   "author": "",

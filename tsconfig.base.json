@@ -17,8 +17,15 @@
     "noEmit": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["apps/web/src/*"]
+      "@/*": ["apps/web/src/*"],
+      "@shared/schemas": ["packages/shared/schemas/src/index.ts"],
+      "@shared/schemas/*": ["packages/shared/schemas/src/*"]
     }
   },
+  "references": [
+    { "path": "./packages/shared/schemas" },
+    { "path": "./apps/backend" },
+    { "path": "./apps/web" }
+  ],
   "exclude": ["node_modules", "dist"]
 }
