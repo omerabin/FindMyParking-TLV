@@ -18,36 +18,38 @@ export const parkingProcessor = async () => {
   const privateParkings = await getPrivateParkingsFromAPI();
   const publicParkings = await getPublicParkingsFromAPI();
   const ahuzotHofParkings = await getAhuzotHofParkingsFromAPI();
+  const allParkings = [
+    getFormattedParkingList(privateParkings),
+    getFormattedParkingList(publicParkings),
+    getFormattedParkingList(ahuzotHofParkings),
+  ].flat();
+  return allParkings;
 };
 
 const getFormattedParkingList = <
   T extends PrivateParkingType | PublicParkingType | AhuzotHofParkingType,
 >(
-  parkingList: T[]
+  parkingList: T
 ): UnifiedParking[] => {
-  if (parkingList.length === 0) return [];
+  if (parkingList?.features?.length === 0) return [];
 
-  const firstFeature = parkingList[0].features[0];
+  const firstFeature = parkingList.features[0];
 
   if ('oid_han' in firstFeature.attributes) {
     // Private
-    return (parkingList as PrivateParkingType[]).flatMap((p) =>
-      p.features.map(mapPrivateParking)
-    );
+    return (parkingList as PrivateParkingType).features.map(mapPrivateParking);
   }
 
   if ('oid_hof' in firstFeature.attributes) {
     // Ahuzot Hof
-    return (parkingList as AhuzotHofParkingType[]).flatMap((p) =>
-      p.features.map(mapAhuzotHofParking)
+    return (parkingList as AhuzotHofParkingType).features.map(
+      mapAhuzotHofParking
     );
   }
 
   if ('oid' in firstFeature.attributes) {
     // Public
-    return (parkingList as PublicParkingType[]).flatMap((p) =>
-      p.features.map(mapPublicParking)
-    );
+    return (parkingList as PublicParkingType).features.map(mapPublicParking);
   }
 
   return [];
