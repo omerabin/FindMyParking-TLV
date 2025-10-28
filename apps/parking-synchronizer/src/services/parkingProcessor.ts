@@ -84,7 +84,7 @@ const mapPrivateParking = (
   },
   pricing: {
     notes: '',
-    day: feature.attributes.factor?.toString(),
+    day: '',
   },
   availability: {
     status: feature.attributes.t_shimush,
