@@ -46,7 +46,7 @@ export const AhuzotHofFeatureZ = z.object({
 });
 
 // Full API response
-export const AhuzotHofParkingAPI = z.object({
+export const AhuzotHofParkingSchema = z.object({
   displayFieldName: z.string(),
   fieldAliases: z.record(z.string(), z.string()),
   geometryType: z.string(),
@@ -64,3 +64,5 @@ export const AhuzotHofParkingAPI = z.object({
   ),
   features: z.array(AhuzotHofFeatureZ),
 });
+
+export type AhuzotHofParking = z.infer<typeof AhuzotHofParkingSchema>;

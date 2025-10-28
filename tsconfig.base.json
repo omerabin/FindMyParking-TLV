@@ -25,7 +25,8 @@
   "references": [
     { "path": "./packages/shared/schemas" },
     { "path": "./apps/backend" },
-    { "path": "./apps/web" }
+    { "path": "./apps/web" },
+    { "path": "./apps/parking-synchronizer" }
   ],
   "exclude": ["node_modules", "dist"]
 }

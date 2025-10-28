@@ -35,7 +35,7 @@ export const PrivateParkingFeatureZ = z.object({
 });
 
 // Full API response
-export const PrivateParkingAPI = z.object({
+export const PrivateParkingSchema = z.object({
   displayFieldName: z.string(),
   fieldAliases: z.record(z.string(), z.string()),
   geometryType: z.string(),
@@ -53,3 +53,5 @@ export const PrivateParkingAPI = z.object({
   ),
   features: z.array(PrivateParkingFeatureZ),
 });
+
+export type PrivateParkingType = z.infer<typeof PrivateParkingSchema>;

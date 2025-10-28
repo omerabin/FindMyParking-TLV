@@ -1,1 +1,1 @@
-export { AhuzotHofParkingAPI } from './ahuzotHofParkingSchema';
+export { AhuzotHofParkingSchema as AhuzotHofParkingAPI } from './ahuzotHofParkingSchema';
