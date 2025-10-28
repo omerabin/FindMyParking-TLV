@@ -18,11 +18,18 @@ export const parkingProcessor = async () => {
   const privateParkings = await getPrivateParkingsFromAPI();
   const publicParkings = await getPublicParkingsFromAPI();
   const ahuzotHofParkings = await getAhuzotHofParkingsFromAPI();
+  const filteredPrivateParkings = {
+    ...privateParkings,
+    features: privateParkings.features.filter(
+      (feature) => !feature.attributes.del_7
+    ),
+  };
   const allParkings = [
-    getFormattedParkingList(privateParkings),
+    getFormattedParkingList(filteredPrivateParkings),
     getFormattedParkingList(publicParkings),
     getFormattedParkingList(ahuzotHofParkings),
   ].flat();
+
   return allParkings;
 };
 
@@ -76,11 +83,11 @@ const mapPrivateParking = (
     floors: feature.attributes.ms_koma,
   },
   pricing: {
-    notes: feature.attributes.t_shimush,
+    notes: '',
     day: feature.attributes.factor?.toString(),
   },
   availability: {
-    status: feature.attributes.del_7 ? 'active' : 'inactive',
+    status: feature.attributes.t_shimush,
   },
   creation_source: 'tlv-api',
 });
