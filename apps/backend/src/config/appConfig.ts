@@ -6,6 +6,7 @@ const envSchema = z.object({
   NODE_ENV: z.enum(['development', 'production']).default('development'),
   PORT: z.string().transform(Number).default('5000'),
   MONGO_URI: z.string().min(1, 'MONGO_URI is required'),
+  CLIENT_URL: z.string().url().default('http://localhost:3000'),
 });
 
 const parsedEnv = envSchema.safeParse(process.env);

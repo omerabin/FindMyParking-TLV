@@ -1,8 +1,17 @@
 import express, { Request, Response } from 'express';
 import { appConfig } from './config/appConfig';
+import cors from 'cors';
 
 const app = express();
 const port = appConfig.PORT;
+
+app.use(
+  cors({
+    origin: appConfig.CLIENT_URL,
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // allowed methods
+    credentials: true, // if you send cookies or auth headers
+  })
+);
 
 app.use(express.json());
 
