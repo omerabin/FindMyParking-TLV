@@ -27,7 +27,3 @@ export const getPublicParkingsFromAPI = async () =>
     saveToFile: 'publicParkings.json',
     schema: PublicParkingSchema,
   });
-
-export const convertParkingDataToUnifiedFormat = (data: any) => {
-  return data;
-};

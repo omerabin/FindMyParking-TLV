@@ -12,5 +12,6 @@ app.get('/health', (_req: Request, res: Response) => {
 
 app.listen(port, () => {
   // eslint-disable-next-line no-console
-  console.log(`backend listening on http://localhost:${port}`);
+  console.log(`parking-synchronizer listening on http://localhost:${port}`);
 });
+// NOTE: for now its running as express service. In the future it will run as a node worker that schedules once a day
