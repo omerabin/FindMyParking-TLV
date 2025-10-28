@@ -82,7 +82,7 @@ const mapPrivateParking = (
   feature: PrivateParkingFeatureType
 ): UnifiedParking => ({
   type: 'private',
-  name: feature.attributes.shem_rechov,
+  name: feature.attributes.shem_rechov ?? '',
   uniqueId: feature.attributes.UniqueId,
   location: {
     x: feature.attributes.x_coord,
@@ -114,7 +114,7 @@ const mapAhuzotHofParking = (
   feature: AhuzotHofParkingFeatureType
 ): UnifiedParking => ({
   type: 'ahuzot_hof',
-  name: feature.attributes.shem_chenyon,
+  name: feature.attributes.shem_chenyon ?? '',
   uniqueId: feature.attributes.UniqueId,
   location: {
     x: feature.attributes.x,
@@ -143,8 +143,8 @@ const mapPublicParking = (
   feature: PublicParkingFeatureType
 ): UnifiedParking => ({
   type: 'public',
-  name: feature.attributes.name,
-  uniqueId: feature.attributes.UniqueId ?? undefined,
+  name: feature.attributes.name ?? '',
+  uniqueId: feature.attributes.UniqueId ?? '',
   location: {
     x: feature.geometry.x,
     y: feature.geometry.y,
@@ -159,7 +159,7 @@ const mapPublicParking = (
   pricing: {
     day: '',
     entry: undefined,
-    night: undefined,
+    night: '',
     notes: '',
   },
   availability: {
