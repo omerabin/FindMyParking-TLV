@@ -38,7 +38,7 @@ const getFormattedParkingList = <
 >(
   parkingList: T
 ): UnifiedParking[] => {
-  if (parkingList?.features?.length === 0) return [];
+  if (!parkingList?.features?.length) return [];
 
   const firstFeature = parkingList.features[0];
 
