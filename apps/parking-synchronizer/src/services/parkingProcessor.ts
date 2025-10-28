@@ -12,7 +12,8 @@ import {
   getPrivateParkingsFromAPI,
   getPublicParkingsFromAPI,
 } from './fetcher';
-import { UnifiedParking } from '@shared/schemas';
+import { UnifiedParking, UnifiedParkingZod } from '@shared/schemas';
+import { getFormattedDate } from '../utils/processorUtils';
 
 export const parkingProcessor = async () => {
   const privateParkings = await getPrivateParkingsFromAPI();
@@ -30,6 +31,11 @@ export const parkingProcessor = async () => {
     getFormattedParkingList(ahuzotHofParkings),
   ].flat();
 
+  const parsedParkings = UnifiedParkingZod.array().safeParse(allParkings);
+  if (!parsedParkings.success) {
+    console.error('❌ Validation failed:', parsedParkings.error.flatten());
+    throw new Error('Invalid UnifiedParking data');
+  }
   return allParkings;
 };
 
@@ -73,7 +79,7 @@ const mapPrivateParking = (
     y: feature.attributes.y_coord,
   },
   dateImport: feature.attributes.date_import
-    ? new Date(feature.attributes.date_import)
+    ? getFormattedDate(feature.attributes.date_import)
     : undefined,
   owner: {
     fullName: feature.attributes.shem_baal_chechbon,
@@ -107,7 +113,7 @@ const mapAhuzotHofParking = (
     lon: feature.attributes.lon,
   },
   dateImport: feature.attributes.date_import
-    ? new Date(feature.attributes.date_import)
+    ? getFormattedDate(feature.attributes.date_import)
     : undefined,
   capacity: {
     total: feature.attributes.mispar_mekomot_bchenyon,
@@ -134,7 +140,7 @@ const mapPublicParking = (
     y: feature.geometry.y,
   },
   dateImport: feature.attributes.date_import
-    ? new Date(feature.attributes.date_import)
+    ? getFormattedDate(feature.attributes.date_import)
     : undefined,
   capacity: {
     total: feature.attributes.num_vehicles,
