@@ -55,3 +55,4 @@ export const PrivateParkingSchema = z.object({
 });
 
 export type PrivateParkingType = z.infer<typeof PrivateParkingSchema>;
+export type PrivateParkingFeatureType = z.infer<typeof PrivateParkingFeatureZ>;

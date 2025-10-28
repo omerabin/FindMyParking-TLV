@@ -65,4 +65,5 @@ export const AhuzotHofParkingSchema = z.object({
   features: z.array(AhuzotHofFeatureZ),
 });
 
-export type AhuzotHofParking = z.infer<typeof AhuzotHofParkingSchema>;
+export type AhuzotHofParkingType = z.infer<typeof AhuzotHofParkingSchema>;
+export type AhuzotHofParkingFeatureType = z.infer<typeof AhuzotHofFeatureZ>;
