@@ -1,19 +1,17 @@
 // db.service.ts
 import mongoose from 'mongoose';
-import { appConfig } from '../config/appConfig';
 
-export const connectDB = async (): Promise<void> => {
+let isConnected = false;
+
+export const connectDB = async (mongoUri: string): Promise<void> => {
+  if (isConnected) {
+    return;
+  }
+
   try {
-    await mongoose.connect(appConfig.MONGO_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    } as mongoose.ConnectOptions);
-
+    await mongoose.connect(mongoUri);
+    isConnected = true;
     console.log('✅ MongoDB connected successfully');
-
-    mongoose.connection.on('error', (err) => {
-      console.error('❌ MongoDB connection error:', err);
-    });
 
     mongoose.connection.on('disconnected', () => {
       console.warn('⚠️ MongoDB disconnected');

@@ -19,7 +19,9 @@
     "paths": {
       "@/*": ["apps/web/src/*"],
       "@shared/schemas": ["packages/shared/schemas/src/index.ts"],
-      "@shared/schemas/*": ["packages/shared/schemas/src/*"]
+      "@shared/schemas/*": ["packages/shared/schemas/src/*"],
+      "@shared/db": ["packages/shared/db/src/index.ts"],
+      "@shared/db/*": ["packages/shared/db/src/*"]
     }
   },
   "references": [
