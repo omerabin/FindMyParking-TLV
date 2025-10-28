@@ -83,8 +83,10 @@ const mapPrivateParking = (
     floors: feature.attributes.ms_koma,
   },
   pricing: {
-    notes: '',
     day: '',
+    entry: undefined,
+    night: undefined,
+    notes: '',
   },
   availability: {
     status: feature.attributes.t_shimush,
@@ -139,10 +141,13 @@ const mapPublicParking = (
     disabled: feature.attributes.num_disabled,
   },
   pricing: {
-    day: feature.attributes.expiry_date ?? undefined,
+    day: '',
+    entry: undefined,
+    night: undefined,
+    notes: '',
   },
   availability: {
-    status: feature.attributes.description ?? undefined,
+    status: '',
   },
   lotArea: feature.attributes.lot_area,
   creation_source: 'tlv-api',
