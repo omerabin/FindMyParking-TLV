@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 const envSchema = z.object({
   NODE_ENV: z.enum(['development', 'production']).default('development'),
-  PORT: z.string().transform(Number).default(5000),
+  PORT: z.string().transform(Number).default('5000'),
   MONGO_URI: z.string().min(1, 'MONGO_URI is required'),
 });
 

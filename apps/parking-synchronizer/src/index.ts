@@ -1,6 +1,8 @@
 import express, { Request, Response } from 'express';
 import { appConfig } from './config/appConfig';
 import { parkingProcessor } from './services/parkingProcessor';
+import { syncParkingDB } from './services/parkingSync';
+import { connectDB } from '@shared/db';
 
 const app = express();
 const port = appConfig.PORT;
@@ -17,4 +19,8 @@ app.listen(port, () => {
 });
 
 // NOTE: for now its running as express service. In the future it will run as a node worker that schedules once a day
-parkingProcessor();
+(async () => {
+  await connectDB(appConfig.MONGO_URI);
+  const parkingsFromApi = await parkingProcessor();
+  syncParkingDB(parkingsFromApi);
+})();
