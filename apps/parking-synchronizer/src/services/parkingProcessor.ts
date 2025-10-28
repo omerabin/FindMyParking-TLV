@@ -19,12 +19,22 @@ export const parkingProcessor = async () => {
   const privateParkings = await getPrivateParkingsFromAPI();
   const publicParkings = await getPublicParkingsFromAPI();
   const ahuzotHofParkings = await getAhuzotHofParkingsFromAPI();
+  const distinctPrivateParkingsFeaturesSet = new Set();
+
   const filteredPrivateParkings = {
     ...privateParkings,
-    features: privateParkings.features.filter(
-      (feature) => !feature.attributes.del_7
-    ),
+    features: [] as PrivateParkingFeatureType[],
   };
+
+  for (const feature of privateParkings.features) {
+    const key = feature.attributes.del_7;
+    if (!key) continue;
+
+    if (!distinctPrivateParkingsFeaturesSet.has(key)) {
+      distinctPrivateParkingsFeaturesSet.add(key);
+      filteredPrivateParkings.features.push(feature);
+    }
+  }
   const allParkings = [
     getFormattedParkingList(filteredPrivateParkings),
     getFormattedParkingList(publicParkings),
