@@ -108,6 +108,11 @@ const mapPrivateParking = (
     status: feature.attributes.t_shimush,
   },
   creation_source: 'tlv-api',
+  address: {
+    city: 'Tel Aviv',
+    street: feature.attributes.shem_rechov,
+    buildingNumber: feature.attributes.ms_bait,
+  },
 });
 
 const mapAhuzotHofParking = (
@@ -137,6 +142,9 @@ const mapAhuzotHofParking = (
     status: feature.attributes.status_chenyon,
   },
   creation_source: 'tlv-api',
+  address: {
+    street: feature.attributes.ktovet,
+  },
 });
 
 const mapPublicParking = (
@@ -167,4 +175,7 @@ const mapPublicParking = (
   },
   lotArea: feature.attributes.lot_area,
   creation_source: 'tlv-api',
+  address: {
+    street: feature.attributes.address,
+  },
 });

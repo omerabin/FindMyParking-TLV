@@ -1,4 +1,4 @@
-import mongoose, { Schema, Document } from 'mongoose';
+import mongoose, { Schema, Document, InferSchemaType } from 'mongoose';
 
 export interface IUnifiedParking extends Document {
   type: 'private' | 'public' | 'ahuzot_hof';
@@ -112,3 +112,5 @@ export const UnifiedParkingModel = mongoose.model<IUnifiedParking>(
   'UnifiedParking',
   unifiedParkingSchema
 );
+
+export type UnifiedParking = InferSchemaType<typeof unifiedParkingSchema>;

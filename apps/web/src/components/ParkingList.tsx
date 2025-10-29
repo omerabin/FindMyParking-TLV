@@ -17,59 +17,35 @@ interface ParkingListItemProps {
   id: number;
   name: string;
   address: string;
-  price: number;
-  distance: number;
-  rating: number;
-  reviewCount: number;
-  type: 'covered' | 'open' | 'secure';
-  accessibility?: boolean;
-  pango?: boolean;
-  celloPark?: boolean;
+  // price: number;
+  // distance: number;
+  // rating: number;
+  // reviewCount: number;
+  // accessibility?: boolean;
+  // pango?: boolean;
+  // celloPark?: boolean;
   onClick: () => void;
 }
 
 export const ParkingListItem = ({
   name,
   address,
-  price,
-  distance,
-  rating,
-  reviewCount,
-  type,
-  accessibility,
-  pango,
-  celloPark,
+  // price,
+  // distance,
+  // rating,
+  // reviewCount,
+  // accessibility,
+  // pango,
+  // celloPark,
   onClick,
 }: ParkingListItemProps) => {
   const { t, dir } = useLanguage();
 
-  const getTypeIcon = () => {
-    switch (type) {
-      case 'covered':
-        return <Umbrella className="w-4 h-4" />;
-      case 'open':
-        return <Sun className="w-4 h-4" />;
-      case 'secure':
-        return <Shield className="w-4 h-4" />;
-    }
-  };
-
-  const getTypeLabel = () => {
-    switch (type) {
-      case 'covered':
-        return t('covered');
-      case 'open':
-        return t('open');
-      case 'secure':
-        return t('secure');
-    }
-  };
-
-  const getPriceColor = () => {
-    if (price <= 10) return 'bg-green-500';
-    if (price <= 20) return 'bg-yellow-500';
-    return 'bg-orange-500';
-  };
+  // const getPriceColor = () => {
+  //   if (price <= 10) return 'bg-green-500';
+  //   if (price <= 20) return 'bg-yellow-500';
+  //   return 'bg-orange-500';
+  // };
 
   return (
     <Card
@@ -85,60 +61,55 @@ export const ParkingListItem = ({
               <span>{address}</span>
             </div>
           </div>
-          <Badge className={`${getPriceColor()} text-white whitespace-nowrap`}>
+          {/* <Badge className={`${getPriceColor()} text-white whitespace-nowrap`}>
             ₪{price}
             {t('hourly')}
-          </Badge>
+          </Badge> */}
         </div>
 
         <div className="flex items-center gap-4 text-sm flex-wrap">
           <div className="flex items-center gap-1 dark:text-gray-300">
             <Navigation className="w-3 h-3 text-blue-500" />
             <span>
-              {distance}
-              {t('meters')}
+              {/* {distance}
+              {t('meters')} */}
             </span>
-          </div>
-
-          <div className="flex items-center gap-1 dark:text-gray-300">
-            {getTypeIcon()}
-            <span>{getTypeLabel()}</span>
           </div>
 
           <div className="flex items-center gap-1">
             <Star className="w-3 h-3 fill-yellow-400 text-yellow-400" />
-            <span className="dark:text-gray-300">{rating.toFixed(1)}</span>
+            {/* <span className="dark:text-gray-300">{rating.toFixed(1)}</span>
             <span className="text-gray-400 dark:text-gray-500">
               ({reviewCount})
-            </span>
+            </span> */}
           </div>
         </div>
 
         <div className="flex items-center gap-2 flex-wrap">
-          {accessibility && (
+          {/* {accessibility && (
             <Badge
               variant="outline"
               className="text-xs gap-1 dark:border-gray-600 dark:text-gray-300"
             >
               <Accessibility className="w-3 h-3" />
             </Badge>
-          )}
-          {pango && (
+          )} */}
+          {/* {pango && (
             <Badge
               variant="outline"
               className="text-xs dark:border-gray-600 dark:text-gray-300"
             >
               {t('pango')}
             </Badge>
-          )}
-          {celloPark && (
+          )} */}
+          {/* {celloPark && (
             <Badge
               variant="outline"
               className="text-xs dark:border-gray-600 dark:text-gray-300"
             >
               {t('celloPark')}
             </Badge>
-          )}
+          )} */}
         </div>
 
         <Button
