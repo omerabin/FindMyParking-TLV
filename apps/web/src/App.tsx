@@ -11,7 +11,6 @@ import { MapView } from './components/MapView';
 import { ParkingListItem } from './components/ParkingList';
 import { ParkingDetails } from './components/ParkingDetails';
 import { OwnerDashboard } from './components/OwnerDashboard';
-import { EmptyState } from './components/EmptyState';
 import { LoadingSpinner } from './components/LoadingSpinner';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './components/ui/tabs';
 import {
@@ -23,6 +22,12 @@ import {
 } from './components/ui/select';
 import OwnerLogin from './components/OwnerLogin';
 import { UnifiedParking } from '@shared/db';
+import {
+  QueryClient,
+  QueryClientProvider,
+  useQuery,
+} from '@tanstack/react-query';
+import { fetchParkings } from './api/parkings';
 
 const AppContent = () => {
   const navigate = useNavigate();
@@ -33,16 +38,23 @@ const AppContent = () => {
   const [maxDistance, setMaxDistance] = useState(2000);
   const [sortBy, setSortBy] = useState<'price' | 'distance'>('price');
   const [activeTab, setActiveTab] = useState('map');
-  const [isLoading, setIsLoading] = useState(false);
   const [isOwnerLoginShown, setIsOwnerLoginShown] = useState(false);
-  const [parkings, setParkings] = useState<UnifiedParking[]>([]);
-
+  const {
+    data: parkings,
+    isLoading,
+    isError,
+  } = useQuery<UnifiedParking[]>({
+    queryKey: ['parkings'],
+    queryFn: fetchParkings,
+  });
   const ParkingDetailsRoute = () => {
     const { id } = useParams();
     const parkingId = id ? Number(id) : null;
     if (parkingId === null)
       return <div className="p-4">Invalid parking id</div>;
-    const parking = parkings.find((parking) => parking._id === parkingId);
+    const parking = (parkings || []).find(
+      (parking) => parking._id === parkingId
+    );
     if (!parking)
       return (
         <div className="p-4">{t('parkingNotFound') || 'Parking not found'}</div>
@@ -117,7 +129,7 @@ const AppContent = () => {
           </div>
 
           <div className="text-sm text-gray-600 dark:text-gray-400">
-            {parkings.length} {t('lotCount')}
+            {(parkings || []).length} {t('lotCount')}
           </div>
         </div>
       </div>
@@ -127,8 +139,6 @@ const AppContent = () => {
         <div className="container mx-auto max-w-4xl h-full">
           {isLoading ? (
             <LoadingSpinner />
-          ) : parkings.length === 0 ? (
-            <EmptyState type="no-results" onRetry={handleClearFilters} />
           ) : (
             <Tabs
               value={activeTab}
@@ -148,7 +158,7 @@ const AppContent = () => {
 
               <TabsContent value="map" className="flex-1 m-0 p-0">
                 <MapView
-                  parkingLots={parkings}
+                  parkingLots={parkings || []}
                   onParkingSelect={handleParkingSelect}
                 />
               </TabsContent>
@@ -157,7 +167,7 @@ const AppContent = () => {
                 value="list"
                 className="flex-1 m-0 overflow-y-auto p-4 space-y-3 bg-gray-50 dark:bg-gray-900"
               >
-                {parkings.map((lot) => (
+                {(parkings || []).map((lot) => (
                   <ParkingListItem
                     key={lot.id}
                     id={lot.id}
@@ -196,10 +206,14 @@ const AppContent = () => {
 };
 
 const App = () => {
+  const queryClient = new QueryClient();
+
   return (
     <ThemeProvider>
       <LanguageProvider>
-        <AppContent />
+        <QueryClientProvider client={queryClient}>
+          <AppContent />
+        </QueryClientProvider>
       </LanguageProvider>
     </ThemeProvider>
   );

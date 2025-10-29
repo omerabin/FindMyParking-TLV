@@ -5,6 +5,7 @@ import 'leaflet/dist/leaflet.css';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useEffect } from 'react';
 import { UnifiedParking } from '@shared/db';
+import { convertUTMToLatLon } from '@/utils/geo';
 
 interface MapViewProps {
   parkingLots: UnifiedParking[];
@@ -87,8 +88,16 @@ export const MapView = ({ parkingLots, onParkingSelect }: MapViewProps) => {
           <Marker
             key={lot.id}
             position={[
-              lot.location?.lat as number, // fix in future the type to be non-undefined
-              lot.location?.lon as number,
+              lot.location?.lat ??
+                convertUTMToLatLon(
+                  lot.location?.x as number,
+                  lot.location?.y as number
+                )[1], // fix in future the type to be non-undefined
+              lot.location?.lon ??
+                convertUTMToLatLon(
+                  lot.location?.x as number,
+                  lot.location?.y as number
+                )[0],
             ]}
             // icon={createCustomIcon(lot.price, lot.priceDaily, t)}
             eventHandlers={{ click: () => onParkingSelect(lot.id) }}
