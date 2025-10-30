@@ -23,7 +23,7 @@ export const syncParkingDB = async (parkings: UnifiedParking[]) => {
         await UnifiedParkingModel.create(parking);
       }
     } catch (err) {
-      console.error(`❌ Failed to sync parking ${parking.uniqueId}:`, err);
+      console.error(`❌ Failed to sync parking ${parking.name}:`, err);
     }
   }
 

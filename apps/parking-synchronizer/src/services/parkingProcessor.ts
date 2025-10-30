@@ -83,7 +83,6 @@ const mapPrivateParking = (
 ): UnifiedParking => ({
   type: 'private',
   name: feature.attributes.shem_rechov ?? '',
-  uniqueId: feature.attributes.UniqueId,
   location: {
     x: feature.attributes.x_coord,
     y: feature.attributes.y_coord,
@@ -120,7 +119,6 @@ const mapAhuzotHofParking = (
 ): UnifiedParking => ({
   type: 'ahuzot_hof',
   name: feature.attributes.shem_chenyon ?? '',
-  uniqueId: feature.attributes.UniqueId,
   location: {
     x: feature.attributes.x,
     y: feature.attributes.y,
@@ -152,7 +150,6 @@ const mapPublicParking = (
 ): UnifiedParking => ({
   type: 'public',
   name: feature.attributes.name ?? '',
-  uniqueId: feature.attributes.UniqueId ?? '',
   location: {
     x: feature.geometry.x,
     y: feature.geometry.y,
@@ -173,7 +170,6 @@ const mapPublicParking = (
   availability: {
     status: '',
   },
-  lotArea: feature.attributes.lot_area,
   creation_source: 'tlv-api',
   address: {
     street: feature.attributes.address,

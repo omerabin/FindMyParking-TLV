@@ -42,9 +42,6 @@ export interface IUnifiedParking extends Document {
     status?: string;
     updatedAt?: Date;
   };
-  lotArea?: number;
-  usageType?: string;
-  uniqueId?: string;
   dateImport?: Date;
   isActive?: boolean;
   creation_source: 'tlv-api' | 'get-parking';
@@ -96,9 +93,6 @@ const unifiedParkingSchema = new Schema<IUnifiedParking>({
     status: String,
     updatedAt: Date,
   },
-  lotArea: Number,
-  usageType: String,
-  uniqueId: String,
   dateImport: Date,
   isActive: Boolean,
   creation_source: {

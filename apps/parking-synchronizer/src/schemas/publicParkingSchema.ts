@@ -23,7 +23,6 @@ export const PublicParkingAttributesZ = z.object({
   license_date: z.string().nullable(),
   achuzot: z.string().nullable(),
   covered: z.string().nullable(),
-  UniqueId: z.string().nullable(),
   date_import: z.string().nullable(),
 });
 

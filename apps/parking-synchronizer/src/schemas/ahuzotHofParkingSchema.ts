@@ -35,7 +35,6 @@ export const AhuzotHofAttributesZ = z.object({
   tr_status_chenyon: z.number(),
   y: z.number(),
   x: z.number(),
-  UniqueId: z.string(),
   date_import: z.string().nullable(),
 });
 
