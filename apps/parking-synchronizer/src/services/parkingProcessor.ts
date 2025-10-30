@@ -97,21 +97,13 @@ const mapPrivateParking = (
     total: feature.attributes.num_cley_rechev,
     floors: feature.attributes.ms_koma,
   },
-  pricing: {
-    day: '',
-    entry: undefined,
-    night: undefined,
-    notes: '',
-  },
-  availability: {
-    status: feature.attributes.t_shimush,
-  },
   creation_source: 'tlv-api',
   address: {
     city: 'Tel Aviv',
     street: feature.attributes.shem_rechov,
     buildingNumber: feature.attributes.ms_bait,
   },
+  isActive: feature.attributes.t_shimush === 'פתוח',
 });
 
 const mapAhuzotHofParking = (
@@ -160,12 +152,6 @@ const mapPublicParking = (
   capacity: {
     total: feature.attributes.num_vehicles,
     disabled: feature.attributes.num_disabled,
-  },
-  pricing: {
-    day: '',
-    entry: undefined,
-    night: '',
-    notes: '',
   },
   availability: {
     status: '',
