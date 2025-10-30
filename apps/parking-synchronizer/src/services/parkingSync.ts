@@ -2,6 +2,11 @@
 import { UnifiedParkingModel } from '@shared/db';
 import { UnifiedParking } from '@shared/schemas';
 
+const PROBLEMATIC_AHUZOT_HOF_PARKING = [
+  { lat: 32.0774, long: 34.769 },
+  { y: 181198.2, x: 665627.8 },
+];
+
 const getUpdatedParkingData = (
   existing: UnifiedParking,
   parking: UnifiedParking
@@ -11,7 +16,12 @@ const getUpdatedParkingData = (
   const { pricing, ...rest } = parking;
 
   if (isAhuzotHofParking) {
-    return parking;
+    return (parking.location?.lat === PROBLEMATIC_AHUZOT_HOF_PARKING[0].lat &&
+      parking.location?.lon === PROBLEMATIC_AHUZOT_HOF_PARKING[0].long) ||
+      (parking.location?.x === PROBLEMATIC_AHUZOT_HOF_PARKING[1].x &&
+        parking.location?.y === PROBLEMATIC_AHUZOT_HOF_PARKING[1].y)
+      ? existing
+      : parking;
   } else if (isPrivateParking) {
     const { owner, ...rest_ } = rest;
     return { ...rest_, owner: { ...existing.owner } };
