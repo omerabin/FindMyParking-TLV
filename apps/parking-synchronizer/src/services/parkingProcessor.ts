@@ -83,7 +83,6 @@ const mapPrivateParking = (
 ): UnifiedParking => ({
   type: 'private',
   name: feature.attributes.shem_rechov ?? '',
-  uniqueId: feature.attributes.UniqueId,
   location: {
     x: feature.attributes.x_coord,
     y: feature.attributes.y_coord,
@@ -98,16 +97,13 @@ const mapPrivateParking = (
     total: feature.attributes.num_cley_rechev,
     floors: feature.attributes.ms_koma,
   },
-  pricing: {
-    day: '',
-    entry: undefined,
-    night: undefined,
-    notes: '',
-  },
-  availability: {
-    status: feature.attributes.t_shimush,
-  },
   creation_source: 'tlv-api',
+  address: {
+    city: 'Tel Aviv',
+    street: feature.attributes.shem_rechov,
+    buildingNumber: feature.attributes.ms_bait,
+  },
+  isActive: feature.attributes.t_shimush === 'פתוח',
 });
 
 const mapAhuzotHofParking = (
@@ -115,7 +111,6 @@ const mapAhuzotHofParking = (
 ): UnifiedParking => ({
   type: 'ahuzot_hof',
   name: feature.attributes.shem_chenyon ?? '',
-  uniqueId: feature.attributes.UniqueId,
   location: {
     x: feature.attributes.x,
     y: feature.attributes.y,
@@ -129,14 +124,18 @@ const mapAhuzotHofParking = (
     total: feature.attributes.mispar_mekomot_bchenyon,
   },
   pricing: {
-    day: feature.attributes.taarif_yom ?? undefined,
-    night: feature.attributes.taarif_layla ?? undefined,
-    notes: feature.attributes.hearot_taarif ?? undefined,
+    chalon_taarif_yom: feature.attributes.taarif_yom ?? '',
+    hearot_taarif: feature.attributes.hearot_taarif ?? '',
+    taarif_layla: feature.attributes.taarif_layla ?? '',
+    taarif_yom: feature.attributes.taarif_yom ?? '',
   },
   availability: {
     status: feature.attributes.status_chenyon,
   },
   creation_source: 'tlv-api',
+  address: {
+    street: feature.attributes.ktovet,
+  },
 });
 
 const mapPublicParking = (
@@ -144,7 +143,6 @@ const mapPublicParking = (
 ): UnifiedParking => ({
   type: 'public',
   name: feature.attributes.name ?? '',
-  uniqueId: feature.attributes.UniqueId ?? '',
   location: {
     x: feature.geometry.x,
     y: feature.geometry.y,
@@ -156,15 +154,11 @@ const mapPublicParking = (
     total: feature.attributes.num_vehicles,
     disabled: feature.attributes.num_disabled,
   },
-  pricing: {
-    day: '',
-    entry: undefined,
-    night: '',
-    notes: '',
-  },
   availability: {
     status: '',
   },
-  lotArea: feature.attributes.lot_area,
   creation_source: 'tlv-api',
+  address: {
+    street: feature.attributes.address,
+  },
 });

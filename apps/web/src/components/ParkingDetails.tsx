@@ -27,76 +27,32 @@ import {
 } from './ui/dialog';
 import { Textarea } from './ui/textarea';
 import { useLanguage } from '../contexts/LanguageContext';
+import { UnifiedParking } from '@shared/db';
 
 interface ParkingDetailsProps {
-  parking: {
-    id: number;
-    name: string;
-    address: string;
-    price: number;
-    priceDaily?: number;
-    priceMonthly?: number;
-    distance: number;
-    rating: number;
-    reviewCount: number;
-    type: 'covered' | 'open' | 'secure';
-    hours: string;
-    phone: string;
-    accessibility: boolean;
-    pango: boolean;
-    celloPark: boolean;
-    reviews: Array<{
-      id: number;
-      user: string;
-      rating: number;
-      comment: string;
-      date: string;
-    }>;
-  };
+  parking: UnifiedParking;
   onBack: () => void;
 }
 
 export const ParkingDetails = ({ parking, onBack }: ParkingDetailsProps) => {
   const { t, dir } = useLanguage();
-
-  const getTypeIcon = () => {
-    switch (parking.type) {
-      case 'covered':
-        return <Umbrella className="w-4 h-4" />;
-      case 'open':
-        return <Sun className="w-4 h-4" />;
-      case 'secure':
-        return <Shield className="w-4 h-4" />;
-    }
-  };
-
-  const getTypeLabel = () => {
-    switch (parking.type) {
-      case 'covered':
-        return t('covered');
-      case 'open':
-        return t('open');
-      case 'secure':
-        return t('secure');
-    }
-  };
-
-  const getPriceColor = () => {
-    if (parking.price <= 10) return 'bg-green-500';
-    if (parking.price <= 20) return 'bg-yellow-500';
-    return 'bg-orange-500';
-  };
+  const address = `${parking.address?.city} ${parking.address?.street ?? ''} ${parking.address?.buildingNumber ?? ''}`;
+  // const getPriceColor = () => {
+  //   if (parking.price <= 10) return 'bg-green-500';
+  //   if (parking.price <= 20) return 'bg-yellow-500';
+  //   return 'bg-orange-500';
+  // };
 
   const openWaze = () => {
     window.open(
-      `https://waze.com/ul?q=${encodeURIComponent(parking.address)}`,
+      `https://waze.com/ul?q=${encodeURIComponent(address)}&navigate=yes`,
       '_blank'
     );
   };
 
   const openGoogleMaps = () => {
     window.open(
-      `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(parking.address)}`,
+      `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(address)}`,
       '_blank'
     );
   };
@@ -126,19 +82,19 @@ export const ParkingDetails = ({ parking, onBack }: ParkingDetailsProps) => {
             <h1 className="text-xl font-semibold dark:text-white">
               {parking.name}
             </h1>
-            <Badge className={`${getPriceColor()} text-white`}>
+            {/* <Badge className={`${getPriceColor()} text-white`}>
               ₪{parking.price}
               {t('hourly')}
-            </Badge>
+            </Badge> */}
           </div>
 
           <div className="flex items-center gap-1 text-gray-600 dark:text-gray-400">
             <MapPin className="w-4 h-4" />
-            <span className="text-sm">{parking.address}</span>
+            <span className="text-sm">{address}</span>
           </div>
 
           <div className="flex items-center gap-4 flex-wrap">
-            <div className="flex items-center gap-1">
+            {/* <div className="flex items-center gap-1">
               <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
               <span className="font-medium dark:text-white">
                 {parking.rating.toFixed(1)}
@@ -146,18 +102,13 @@ export const ParkingDetails = ({ parking, onBack }: ParkingDetailsProps) => {
               <span className="text-gray-400 text-sm">
                 ({parking.reviewCount} {t('reviews')})
               </span>
-            </div>
+            </div> */}
 
             <div className="flex items-center gap-1 text-sm dark:text-gray-300">
               <Navigation className="w-4 h-4 text-blue-500" />
-              <span>
+              {/* <span>
                 {parking.distance} {t('meters')}
-              </span>
-            </div>
-
-            <div className="flex items-center gap-1 text-sm dark:text-gray-300">
-              {getTypeIcon()}
-              <span>{getTypeLabel()}</span>
+              </span> */}
             </div>
           </div>
 
@@ -172,10 +123,10 @@ export const ParkingDetails = ({ parking, onBack }: ParkingDetailsProps) => {
                   {t('hourly')}
                 </div>
                 <div className="font-medium text-blue-600 dark:text-blue-400">
-                  ₪{parking.price}
+                  {/* ₪{parking.price} */}
                 </div>
               </div>
-              {parking.priceDaily && (
+              {/* {parking.priceDaily && (
                 <div className="text-center p-2 bg-gray-50 dark:bg-gray-900 rounded">
                   <div className="text-gray-500 dark:text-gray-400">
                     {t('daily')}
@@ -184,8 +135,8 @@ export const ParkingDetails = ({ parking, onBack }: ParkingDetailsProps) => {
                     ₪{parking.priceDaily}
                   </div>
                 </div>
-              )}
-              {parking.priceMonthly && (
+              )} */}
+              {/* {parking.priceMonthly && (
                 <div className="text-center p-2 bg-gray-50 dark:bg-gray-900 rounded">
                   <div className="text-gray-500 dark:text-gray-400">
                     {t('monthly')}
@@ -194,7 +145,7 @@ export const ParkingDetails = ({ parking, onBack }: ParkingDetailsProps) => {
                     ₪{parking.priceMonthly}
                   </div>
                 </div>
-              )}
+              )} */}
             </div>
           </div>
 
@@ -204,11 +155,11 @@ export const ParkingDetails = ({ parking, onBack }: ParkingDetailsProps) => {
           <div className="space-y-2">
             <div className="flex items-center gap-2 text-sm dark:text-gray-300">
               <Clock className="w-4 h-4 text-gray-500" />
-              <span>{parking.hours}</span>
+              {/* <span>{parking.hours}</span> */}
             </div>
             <div className="flex items-center gap-2 text-sm dark:text-gray-300">
               <Phone className="w-4 h-4 text-gray-500" />
-              <span>{parking.phone}</span>
+              {/* <span>{parking.phone}</span> */}
             </div>
           </div>
 
@@ -227,23 +178,23 @@ export const ParkingDetails = ({ parking, onBack }: ParkingDetailsProps) => {
                 <CreditCard className="w-3 h-3" />
                 {dir === 'rtl' ? 'כרטיס אשראי' : 'Credit Card'}
               </Badge>
-              {parking.pango && (
+              {/* {parking.pango && (
                 <Badge
                   variant="outline"
                   className="gap-1 dark:border-gray-600 dark:text-gray-300"
                 >
                   {t('pango')}
                 </Badge>
-              )}
-              {parking.celloPark && (
+              )} */}
+              {/* {parking.celloPark && (
                 <Badge
                   variant="outline"
                   className="gap-1 dark:border-gray-600 dark:text-gray-300"
                 >
                   {t('celloPark')}
                 </Badge>
-              )}
-              {parking.accessibility && (
+              )} */}
+              {/* {parking.accessibility && (
                 <Badge
                   variant="outline"
                   className="gap-1 dark:border-gray-600 dark:text-gray-300"
@@ -251,7 +202,7 @@ export const ParkingDetails = ({ parking, onBack }: ParkingDetailsProps) => {
                   <Accessibility className="w-3 h-3" />
                   {t('accessibility')}
                 </Badge>
-              )}
+              )} */}
             </div>
           </div>
 
@@ -310,7 +261,7 @@ export const ParkingDetails = ({ parking, onBack }: ParkingDetailsProps) => {
         {/* Reviews */}
         <div className="space-y-3">
           <h3 className="font-medium dark:text-white">{t('reviews')}</h3>
-          {parking.reviews.map((review) => (
+          {/* {parking.reviews.map((review) => (
             <Card
               key={review.id}
               className="p-4 space-y-2 dark:bg-gray-800 dark:border-gray-700"
@@ -346,7 +297,7 @@ export const ParkingDetails = ({ parking, onBack }: ParkingDetailsProps) => {
                 {review.comment}
               </p>
             </Card>
-          ))}
+          ))} */}
         </div>
       </div>
     </div>

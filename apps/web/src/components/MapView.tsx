@@ -4,19 +4,12 @@ import { Badge } from './ui/badge';
 import 'leaflet/dist/leaflet.css';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useEffect } from 'react';
-
-interface ParkingLot {
-  id: number;
-  name: string;
-  price: number;
-  priceDaily: number;
-  lat: number;
-  lng: number;
-  type: 'covered' | 'open' | 'secure';
-}
+import { UnifiedParking } from '@shared/db';
+import { convertUTMToLatLon } from '@/utils/geo';
+import { getParkingPriceDetails } from '@/utils/priceProcess';
 
 interface MapViewProps {
-  parkingLots: ParkingLot[];
+  parkingLots: UnifiedParking[];
   onParkingSelect: (id: number) => void;
 }
 
@@ -65,13 +58,13 @@ const createCustomIcon = (
   });
 };
 
-const FitBounds = ({ parkingLots }: { parkingLots: ParkingLot[] }) => {
+const FitBounds = ({ parkingLots }: { parkingLots: UnifiedParking[] }) => {
   const map = useMap();
-  useEffect(() => {
-    if (parkingLots.length === 0) return;
-    const bounds = L.latLngBounds(parkingLots.map((lot) => [lot.lat, lot.lng]));
-    map.fitBounds(bounds, { padding: [50, 50] });
-  }, [parkingLots, map]);
+  // useEffect(() => {
+  //   if (parkingLots.length === 0) return;
+  //   const bounds = L.latLngBounds(parkingLots.map((lot) => [lot.lat, lot.lng]));
+  //   map.fitBounds(bounds, { padding: [50, 50] });
+  // }, [parkingLots, map]);
   return null;
 };
 
@@ -95,22 +88,37 @@ export const MapView = ({ parkingLots, onParkingSelect }: MapViewProps) => {
         {parkingLots.map((lot) => (
           <Marker
             key={lot.id}
-            position={[lot.lat, lot.lng]}
-            icon={createCustomIcon(lot.price, lot.priceDaily, t)}
+            position={[
+              lot.location?.lat ??
+                convertUTMToLatLon(
+                  lot.location?.x as number,
+                  lot.location?.y as number
+                )[1], // fix in future the type to be non-undefined
+              lot.location?.lon ??
+                convertUTMToLatLon(
+                  lot.location?.x as number,
+                  lot.location?.y as number
+                )[0],
+            ]}
+            icon={createCustomIcon(
+              getParkingPriceDetails(lot).firstHour,
+              getParkingPriceDetails(lot).flatRate,
+              t
+            )}
             eventHandlers={{ click: () => onParkingSelect(lot.id) }}
           >
             <Popup>
               <div className="flex flex-col items-start">
                 <strong>{lot.name}</strong>
                 <Badge
-                  className={`mt-1 text-xs px-2 py-1 ${getPriceBadgeColor(lot.price)}`}
+                  className={`mt-1 text-xs px-2 py-1 ${getPriceBadgeColor(getParkingPriceDetails(lot).firstHour)}`}
                 >
-                  ₪{lot.price} / {t('priceHour')}
+                  ₪{getParkingPriceDetails(lot).firstHour} / {t('priceHour')}
                 </Badge>
                 <Badge
-                  className={`mt-1 text-xs px-2 py-1 ${getPriceBadgeColor(lot.priceDaily)}`}
+                  className={`mt-1 text-xs px-2 py-1 ${getPriceBadgeColor(getParkingPriceDetails(lot).flatRate)}`}
                 >
-                  ₪{lot.priceDaily} / {t('priceDaily')}
+                  ₪{getParkingPriceDetails(lot).flatRate} / {t('priceDaily')}
                 </Badge>
                 <span className="text-xs mt-1 capitalize">{t(lot.type)}</span>
               </div>

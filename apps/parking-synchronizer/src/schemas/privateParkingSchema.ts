@@ -24,7 +24,6 @@ export const PrivateParkingAttributesZ = z.object({
   num_cley_rechev: z.number(),
   x_coord: z.number(),
   y_coord: z.number(),
-  UniqueId: z.string(),
   date_import: z.string().nullable(),
 });
 

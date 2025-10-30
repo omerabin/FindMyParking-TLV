@@ -15,8 +15,6 @@ import { useLanguage } from '../contexts/LanguageContext';
 interface FilterPanelProps {
   priceRange: [number, number];
   onPriceRangeChange: (range: [number, number]) => void;
-  selectedTypes: string[];
-  onTypesChange: (types: string[]) => void;
   maxDistance: number;
   onMaxDistanceChange: (distance: number) => void;
   onClearFilters: () => void;
@@ -25,8 +23,6 @@ interface FilterPanelProps {
 export const FilterPanel = ({
   priceRange,
   onPriceRangeChange,
-  selectedTypes,
-  onTypesChange,
   maxDistance,
   onMaxDistanceChange,
   onClearFilters,
@@ -38,14 +34,6 @@ export const FilterPanel = ({
     { id: 'open', label: t('open'), icon: Sun },
     { id: 'secure', label: t('secure'), icon: Shield },
   ];
-
-  const toggleType = (type: string) => {
-    if (selectedTypes.includes(type)) {
-      onTypesChange(selectedTypes.filter((t) => t !== type));
-    } else {
-      onTypesChange([...selectedTypes, type]);
-    }
-  };
 
   return (
     <Sheet>
@@ -94,11 +82,7 @@ export const FilterPanel = ({
                 const Icon = type.icon;
                 return (
                   <div key={type.id} className="flex items-center gap-2">
-                    <Checkbox
-                      id={type.id}
-                      checked={selectedTypes.includes(type.id)}
-                      onCheckedChange={() => toggleType(type.id)}
-                    />
+                    <Checkbox id={type.id} />
                     <label
                       htmlFor={type.id}
                       className="flex items-center gap-2 cursor-pointer flex-1 dark:text-gray-300"

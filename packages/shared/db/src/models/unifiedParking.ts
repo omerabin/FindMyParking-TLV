@@ -1,4 +1,4 @@
-import mongoose, { Schema, Document } from 'mongoose';
+import mongoose, { Schema, Document, InferSchemaType } from 'mongoose';
 
 export interface IUnifiedParking extends Document {
   type: 'private' | 'public' | 'ahuzot_hof';
@@ -33,18 +33,15 @@ export interface IUnifiedParking extends Document {
     floors?: number;
   };
   pricing?: {
-    entry?: number;
-    day?: string;
-    night?: string;
-    notes?: string;
+    taarif_yom: string;
+    chalon_taarif_yom: string;
+    taarif_layla: string;
+    hearot_taarif: string;
   };
   availability?: {
     status?: string;
     updatedAt?: Date;
   };
-  lotArea?: number;
-  usageType?: string;
-  uniqueId?: string;
   dateImport?: Date;
   isActive?: boolean;
   creation_source: 'tlv-api' | 'get-parking';
@@ -87,18 +84,15 @@ const unifiedParkingSchema = new Schema<IUnifiedParking>({
     floors: Number,
   },
   pricing: {
-    entry: Number,
-    day: String,
-    night: String,
-    notes: String,
+    taarif_yom: String,
+    chalon_taarif_yom: String,
+    taarif_layla: String,
+    hearot_taarif: String,
   },
   availability: {
     status: String,
     updatedAt: Date,
   },
-  lotArea: Number,
-  usageType: String,
-  uniqueId: String,
   dateImport: Date,
   isActive: Boolean,
   creation_source: {
@@ -112,3 +106,5 @@ export const UnifiedParkingModel = mongoose.model<IUnifiedParking>(
   'UnifiedParking',
   unifiedParkingSchema
 );
+
+export type UnifiedParking = InferSchemaType<typeof unifiedParkingSchema>;

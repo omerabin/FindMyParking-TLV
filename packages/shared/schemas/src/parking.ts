@@ -38,10 +38,10 @@ export const CapacityZod = z.object({
 });
 
 export const PricingZod = z.object({
-  entry: z.number().optional(),
-  day: z.string().optional(),
-  night: z.string().optional(),
-  notes: z.string().optional(),
+  taarif_yom: z.string().optional(),
+  chalon_taarif_yom: z.string().optional(),
+  taarif_layla: z.string().optional(),
+  hearot_taarif: z.string().optional(),
 });
 
 export const AvailabilityZod = z.object({
@@ -59,9 +59,6 @@ export const UnifiedParkingZod = z.object({
   capacity: CapacityZod.optional(),
   pricing: PricingZod.optional(),
   availability: AvailabilityZod.optional(),
-  lotArea: z.number().optional(),
-  usageType: z.string().optional(),
-  uniqueId: z.string().optional(),
   dateImport: z.date().optional(),
   isActive: z.boolean().optional(),
   creation_source: z.enum(['tlv-api', 'get-parking']),
