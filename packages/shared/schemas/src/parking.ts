@@ -38,10 +38,10 @@ export const CapacityZod = z.object({
 });
 
 export const PricingZod = z.object({
-  entry: z.number().optional(),
-  day: z.string().optional(),
-  night: z.string().optional(),
-  notes: z.string().optional(),
+  taarif_yom: z.string().optional(),
+  chalon_taarif_yom: z.string().optional(),
+  taarif_layla: z.string().optional(),
+  hearot_taarif: z.string().optional(),
 });
 
 export const AvailabilityZod = z.object({

@@ -124,9 +124,10 @@ const mapAhuzotHofParking = (
     total: feature.attributes.mispar_mekomot_bchenyon,
   },
   pricing: {
-    day: feature.attributes.taarif_yom ?? undefined,
-    night: feature.attributes.taarif_layla ?? undefined,
-    notes: feature.attributes.hearot_taarif ?? undefined,
+    chalon_taarif_yom: feature.attributes.taarif_yom ?? '',
+    hearot_taarif: feature.attributes.hearot_taarif ?? '',
+    taarif_layla: feature.attributes.taarif_layla ?? '',
+    taarif_yom: feature.attributes.taarif_yom ?? '',
   },
   availability: {
     status: feature.attributes.status_chenyon,
