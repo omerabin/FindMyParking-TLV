@@ -28,6 +28,7 @@ import {
   useQuery,
 } from '@tanstack/react-query';
 import { fetchParkings } from './api/parkings';
+import { getParkingPriceDetails } from './utils/priceProcess';
 
 const AppContent = () => {
   const navigate = useNavigate();
@@ -173,7 +174,7 @@ const AppContent = () => {
                     id={lot.id}
                     name={lot.name}
                     address={`${lot.address?.city} ${lot.address?.street ?? ''} ${lot.address?.buildingNumber ?? ''}`}
-                    // price={lot.price}
+                    price={getParkingPriceDetails(lot).firstHour}
                     // distance={lot.distance}
                     // rating={lot.rating}
                     // reviewCount={lot.reviewCount}

@@ -6,6 +6,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { useEffect } from 'react';
 import { UnifiedParking } from '@shared/db';
 import { convertUTMToLatLon } from '@/utils/geo';
+import { getParkingPriceDetails } from '@/utils/priceProcess';
 
 interface MapViewProps {
   parkingLots: UnifiedParking[];
@@ -99,22 +100,26 @@ export const MapView = ({ parkingLots, onParkingSelect }: MapViewProps) => {
                   lot.location?.y as number
                 )[0],
             ]}
-            // icon={createCustomIcon(lot.price, lot.priceDaily, t)}
+            icon={createCustomIcon(
+              getParkingPriceDetails(lot).firstHour,
+              getParkingPriceDetails(lot).flatRate,
+              t
+            )}
             eventHandlers={{ click: () => onParkingSelect(lot.id) }}
           >
             <Popup>
               <div className="flex flex-col items-start">
                 <strong>{lot.name}</strong>
-                {/* <Badge
-                  className={`mt-1 text-xs px-2 py-1 ${getPriceBadgeColor(lot.price)}`}
+                <Badge
+                  className={`mt-1 text-xs px-2 py-1 ${getPriceBadgeColor(getParkingPriceDetails(lot).firstHour)}`}
                 >
-                  ₪{lot.price} / {t('priceHour')}
-                </Badge> */}
-                {/* <Badge
-                  className={`mt-1 text-xs px-2 py-1 ${getPriceBadgeColor(lot.priceDaily)}`}
+                  ₪{getParkingPriceDetails(lot).firstHour} / {t('priceHour')}
+                </Badge>
+                <Badge
+                  className={`mt-1 text-xs px-2 py-1 ${getPriceBadgeColor(getParkingPriceDetails(lot).flatRate)}`}
                 >
-                  ₪{lot.priceDaily} / {t('priceDaily')}
-                </Badge> */}
+                  ₪{getParkingPriceDetails(lot).flatRate} / {t('priceDaily')}
+                </Badge>
                 <span className="text-xs mt-1 capitalize">{t(lot.type)}</span>
               </div>
             </Popup>

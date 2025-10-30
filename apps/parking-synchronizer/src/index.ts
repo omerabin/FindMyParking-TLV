@@ -19,8 +19,8 @@ app.listen(port, () => {
 });
 
 // NOTE: for now its running as express service. In the future it will run as a node worker that schedules once a day
-(async () => {
-  await connectDB(appConfig.MONGO_URI);
-  const parkingsFromApi = await parkingProcessor();
-  syncParkingDB(parkingsFromApi);
-})();
+// (async () => {
+//   await connectDB(appConfig.MONGO_URI);
+//   const parkingsFromApi = await parkingProcessor();
+//   syncParkingDB(parkingsFromApi);
+// })();

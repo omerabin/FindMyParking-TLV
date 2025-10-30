@@ -17,7 +17,7 @@ interface ParkingListItemProps {
   id: number;
   name: string;
   address: string;
-  // price: number;
+  price: number;
   // distance: number;
   // rating: number;
   // reviewCount: number;
@@ -30,7 +30,7 @@ interface ParkingListItemProps {
 export const ParkingListItem = ({
   name,
   address,
-  // price,
+  price,
   // distance,
   // rating,
   // reviewCount,
@@ -41,11 +41,11 @@ export const ParkingListItem = ({
 }: ParkingListItemProps) => {
   const { t, dir } = useLanguage();
 
-  // const getPriceColor = () => {
-  //   if (price <= 10) return 'bg-green-500';
-  //   if (price <= 20) return 'bg-yellow-500';
-  //   return 'bg-orange-500';
-  // };
+  const getPriceColor = () => {
+    if (price <= 10) return 'bg-green-500';
+    if (price <= 20) return 'bg-yellow-500';
+    return 'bg-orange-500';
+  };
 
   return (
     <Card
@@ -61,10 +61,10 @@ export const ParkingListItem = ({
               <span>{address}</span>
             </div>
           </div>
-          {/* <Badge className={`${getPriceColor()} text-white whitespace-nowrap`}>
+          <Badge className={`${getPriceColor()} text-white whitespace-nowrap`}>
             ₪{price}
             {t('hourly')}
-          </Badge> */}
+          </Badge>
         </div>
 
         <div className="flex items-center gap-4 text-sm flex-wrap">
